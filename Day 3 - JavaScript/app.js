@@ -89,4 +89,19 @@ console.log("String with Spaces Remove: ", newStr);
 
 // Remove White Spaces
 
+let stringWhiteSpaces = "    Ammar Ahmed    ";
+
+let removeWhiteSpaces = stringWhiteSpaces.split(" ");
+
+let removeString = "";
+
+for(let i = 0; i < removeWhiteSpaces.length; i++){
+  if(removeWhiteSpaces[i] !== ""){
+    removeString = removeString + removeWhiteSpaces[i];
+  }
+}
+
+
+console.log(removeString);
+
 

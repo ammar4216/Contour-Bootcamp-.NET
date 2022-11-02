@@ -78,3 +78,4 @@ const getRecArea = () => {
 };
 
 areaBtn.addEventListener("click", getRecArea);
+

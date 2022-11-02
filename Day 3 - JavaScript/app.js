@@ -52,7 +52,7 @@ console.log(count);
 
 // Reverse the String
 
-let name = prompt("Enter the String: ")
+let name = prompt("Enter the String: ");
 let resultString = "";
 
 for (let i = name.length - 1; i >= 0; i--) {
@@ -61,28 +61,32 @@ for (let i = name.length - 1; i >= 0; i--) {
 
 console.log(resultString);
 
-
 // Palindrome
 
-if(name === resultString){
-    console.log("This is a Palindrome String");
-} else{
-    console.log("This is not a Palindrome String");
+if (name === resultString) {
+  console.log("This is a Palindrome String");
+} else {
+  console.log("This is not a Palindrome String");
 }
 
 // Space Count & Space Remove
 
 let string = "Ammar Ahmed Bootcamp .NET Techlift";
 let count2 = 0;
+let newStr = "";
 
-for(let i = 0; i <= string.length; i++)
-{
-    if(string[i] == " "){
-        count2++;
-    }
+for (let i = 0; i < string.length; i++) {
+  if (string[i] == " ") {
+    count2++;
+  }
+  if (string[i] !== " ") {
+    newStr = newStr + string[i];
+  }
 }
 
-let spaceRemove = [...string];
+console.log("Spaces in this String: ", count2);
+console.log("String with Spaces Remove: ", newStr);
 
-console.log("Spaces in this String: ", count2)
-console.log(spaceRemove);
+// Remove White Spaces
+
+

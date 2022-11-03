@@ -38,12 +38,14 @@ btn.addEventListener("click", () => {
 
 // forEach & Map
 
-// arr.forEach((val, i)=>{
-//   let li = document.createElement("li");
-//     let textNode = document.createTextNode(arr[i]);
-//     li.appendChild(textNode); 
-//     fruitList.appendChild(li); 
-// });
+
+arr.forEach((val, i)=>{
+  let li = document.createElement("li");
+    let textNode = document.createTextNode(arr[i]);
+    li.appendChild(textNode); 
+    fruitList.appendChild(li); 
+});
+
 
 arr.map((val, i)=>{
   let li = document.createElement("li");

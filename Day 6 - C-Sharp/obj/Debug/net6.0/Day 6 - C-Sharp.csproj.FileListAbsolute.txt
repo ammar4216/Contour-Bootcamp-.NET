@@ -1,0 +1,15 @@
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 6 - C-Sharp\bin\Debug\net6.0\Day 6 - C-Sharp.exe
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 6 - C-Sharp\bin\Debug\net6.0\Day 6 - C-Sharp.deps.json
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 6 - C-Sharp\bin\Debug\net6.0\Day 6 - C-Sharp.runtimeconfig.json
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 6 - C-Sharp\bin\Debug\net6.0\Day 6 - C-Sharp.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 6 - C-Sharp\bin\Debug\net6.0\Day 6 - C-Sharp.pdb
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 6 - C-Sharp\obj\Debug\net6.0\Day 6 - C-Sharp.csproj.AssemblyReference.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 6 - C-Sharp\obj\Debug\net6.0\Day 6 - C-Sharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 6 - C-Sharp\obj\Debug\net6.0\Day 6 - C-Sharp.AssemblyInfoInputs.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 6 - C-Sharp\obj\Debug\net6.0\Day 6 - C-Sharp.AssemblyInfo.cs
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 6 - C-Sharp\obj\Debug\net6.0\Day 6 - C-Sharp.csproj.CoreCompileInputs.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 6 - C-Sharp\obj\Debug\net6.0\Day 6 - C-Sharp.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 6 - C-Sharp\obj\Debug\net6.0\refint\Day 6 - C-Sharp.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 6 - C-Sharp\obj\Debug\net6.0\Day 6 - C-Sharp.pdb
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 6 - C-Sharp\obj\Debug\net6.0\Day 6 - C-Sharp.genruntimeconfig.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 6 - C-Sharp\obj\Debug\net6.0\ref\Day 6 - C-Sharp.dll

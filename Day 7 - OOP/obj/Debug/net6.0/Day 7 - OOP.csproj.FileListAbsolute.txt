@@ -1,0 +1,15 @@
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 7 - OOP\bin\Debug\net6.0\Day 7 - OOP.exe
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 7 - OOP\bin\Debug\net6.0\Day 7 - OOP.deps.json
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 7 - OOP\bin\Debug\net6.0\Day 7 - OOP.runtimeconfig.json
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 7 - OOP\bin\Debug\net6.0\Day 7 - OOP.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 7 - OOP\bin\Debug\net6.0\Day 7 - OOP.pdb
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 7 - OOP\obj\Debug\net6.0\Day 7 - OOP.csproj.AssemblyReference.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 7 - OOP\obj\Debug\net6.0\Day 7 - OOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 7 - OOP\obj\Debug\net6.0\Day 7 - OOP.AssemblyInfoInputs.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 7 - OOP\obj\Debug\net6.0\Day 7 - OOP.AssemblyInfo.cs
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 7 - OOP\obj\Debug\net6.0\Day 7 - OOP.csproj.CoreCompileInputs.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 7 - OOP\obj\Debug\net6.0\Day 7 - OOP.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 7 - OOP\obj\Debug\net6.0\refint\Day 7 - OOP.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 7 - OOP\obj\Debug\net6.0\Day 7 - OOP.pdb
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 7 - OOP\obj\Debug\net6.0\Day 7 - OOP.genruntimeconfig.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 7 - OOP\obj\Debug\net6.0\ref\Day 7 - OOP.dll

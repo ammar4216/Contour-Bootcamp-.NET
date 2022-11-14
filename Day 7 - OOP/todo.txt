@@ -1,0 +1,30 @@
+// Abstraction
+
+-> Abstract class (done)
+-> Function body declartion is not possible with the abstract keyword in abstract class (done)
+-> The abstract keyword is not possible with variables or fields in the abstract class (done)
+-> If we describe the multiple methods in abstract class so we must implement/declared all the methods in the derived class as well (done)
+-> If we don't want any method in our child class so we have to declared as well but we can throw the Exception in the body of that method (done)
+-> multiple methods with abstract keyword (done)
+-> simple methods with abstract methods (done)
+-> defining and declaring abstract methods (done)
+
+
+// Interfaces
+
+-> interfaces 
+-> We don't have to use override keyword while implementing in the child class as compare to abstract class. (done)
+-> diff b/w abstract and interfaces (done)
+-> inheritance with interfaces (done)
+-> multiple inheritance with interfaces (done)
+
+
+// Struct
+
+-> struct 
+-> struct with classes
+
+
+// Enumerations
+
+-> enum

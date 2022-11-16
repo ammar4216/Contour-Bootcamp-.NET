@@ -1,0 +1,15 @@
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\bin\Debug\net6.0\Day 8 - Enum and LINQ.exe
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\bin\Debug\net6.0\Day 8 - Enum and LINQ.deps.json
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\bin\Debug\net6.0\Day 8 - Enum and LINQ.runtimeconfig.json
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\bin\Debug\net6.0\Day 8 - Enum and LINQ.dll
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\bin\Debug\net6.0\Day 8 - Enum and LINQ.pdb
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\Day 8 - Enum and LINQ.csproj.AssemblyReference.cache
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\Day 8 - Enum and LINQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\Day 8 - Enum and LINQ.AssemblyInfoInputs.cache
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\Day 8 - Enum and LINQ.AssemblyInfo.cs
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\Day 8 - Enum and LINQ.csproj.CoreCompileInputs.cache
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\Day 8 - Enum and LINQ.dll
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\refint\Day 8 - Enum and LINQ.dll
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\Day 8 - Enum and LINQ.pdb
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\Day 8 - Enum and LINQ.genruntimeconfig.cache
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\ref\Day 8 - Enum and LINQ.dll

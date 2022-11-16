@@ -1,0 +1,15 @@
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\bin\Debug\net6.0\Day 8 - LINQ.exe
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\bin\Debug\net6.0\Day 8 - LINQ.deps.json
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\bin\Debug\net6.0\Day 8 - LINQ.runtimeconfig.json
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\bin\Debug\net6.0\Day 8 - LINQ.dll
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\bin\Debug\net6.0\Day 8 - LINQ.pdb
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\Day 8 - LINQ.csproj.AssemblyReference.cache
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\Day 8 - LINQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\Day 8 - LINQ.AssemblyInfoInputs.cache
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\Day 8 - LINQ.AssemblyInfo.cs
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\Day 8 - LINQ.csproj.CoreCompileInputs.cache
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\Day 8 - LINQ.dll
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\refint\Day 8 - LINQ.dll
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\Day 8 - LINQ.pdb
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\Day 8 - LINQ.genruntimeconfig.cache
+C:\Users\ahmedamma\Documents\Day 8 - LINQ\obj\Debug\net6.0\ref\Day 8 - LINQ.dll

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Day_9___Asp.NET_MVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -19,12 +20,12 @@ namespace Day_9___Asp.NET_MVC.Controllers
             return View();
         }
 
-        public ActionResult submit(string Email, string Password)
+        public ActionResult submit(Login login)
         {
-            ViewBag.Email = Email;
-            ViewBag.Password = Password;
+            ViewBag.Email = login.Email;
+            ViewBag.Password = login.Password;
 
-            if (Email == "admin@gmail.com" || Password == "admin")
+            if (login.Email == "admin@gmail.com" || login.Password == "admin")
             {
                 return View("welcome");
             }
@@ -36,5 +37,6 @@ namespace Day_9___Asp.NET_MVC.Controllers
 
             
         }
+       
     }
 }

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StudentManagementSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Batch">
+    <Key>
+      <PropertyRef Name="batch_id" />
+    </Key>
+    <Property Name="batch_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="batch_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="batch_year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Registrations" Relationship="Self.FK__Registrat__batch__2F10007B" FromRole="Batch" ToRole="Registration" />
+  </EntityType>
+  <EntityType Name="Course">
+    <Key>
+      <PropertyRef Name="course_id" />
+    </Key>
+    <Property Name="course_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="course_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="course_duration" Type="Int32" />
+    <NavigationProperty Name="Registrations" Relationship="Self.FK__Registrat__cours__2E1BDC42" FromRole="Course" ToRole="Registration" />
+  </EntityType>
+  <EntityType Name="Registration">
+    <Key>
+      <PropertyRef Name="reg_id" />
+    </Key>
+    <Property Name="reg_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="first_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="last_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="nic" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="course_id" Type="Int32" />
+    <Property Name="batch_id" Type="Int32" />
+    <Property Name="tel_no" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Batch" Relationship="Self.FK__Registrat__batch__2F10007B" FromRole="Registration" ToRole="Batch" />
+    <NavigationProperty Name="Course" Relationship="Self.FK__Registrat__cours__2E1BDC42" FromRole="Registration" ToRole="Course" />
+  </EntityType>
+  <EntityType Name="UserRegistration">
+    <Key>
+      <PropertyRef Name="userr_id" />
+    </Key>
+    <Property Name="userr_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="first_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="last_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pass" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK__Registrat__batch__2F10007B">
+    <End Role="Batch" Type="Self.Batch" Multiplicity="0..1" />
+    <End Role="Registration" Type="Self.Registration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Batch">
+        <PropertyRef Name="batch_id" />
+      </Principal>
+      <Dependent Role="Registration">
+        <PropertyRef Name="batch_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Registrat__cours__2E1BDC42">
+    <End Role="Course" Type="Self.Course" Multiplicity="0..1" />
+    <End Role="Registration" Type="Self.Registration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="course_id" />
+      </Principal>
+      <Dependent Role="Registration">
+        <PropertyRef Name="course_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="StudentManagementSystemEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Batches" EntityType="Self.Batch" />
+    <EntitySet Name="Courses" EntityType="Self.Course" />
+    <EntitySet Name="Registrations" EntityType="Self.Registration" />
+    <EntitySet Name="UserRegistrations" EntityType="Self.UserRegistration" />
+    <AssociationSet Name="FK__Registrat__batch__2F10007B" Association="Self.FK__Registrat__batch__2F10007B">
+      <End Role="Batch" EntitySet="Batches" />
+      <End Role="Registration" EntitySet="Registrations" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Registrat__cours__2E1BDC42" Association="Self.FK__Registrat__cours__2E1BDC42">
+      <End Role="Course" EntitySet="Courses" />
+      <End Role="Registration" EntitySet="Registrations" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

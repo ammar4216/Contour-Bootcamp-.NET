@@ -1,0 +1,15 @@
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 13 - Design Patterns\bin\Debug\net6.0\Day 13 - Design Patterns.exe
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 13 - Design Patterns\bin\Debug\net6.0\Day 13 - Design Patterns.deps.json
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 13 - Design Patterns\bin\Debug\net6.0\Day 13 - Design Patterns.runtimeconfig.json
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 13 - Design Patterns\bin\Debug\net6.0\Day 13 - Design Patterns.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 13 - Design Patterns\bin\Debug\net6.0\Day 13 - Design Patterns.pdb
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 13 - Design Patterns\obj\Debug\net6.0\Day 13 - Design Patterns.csproj.AssemblyReference.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 13 - Design Patterns\obj\Debug\net6.0\Day 13 - Design Patterns.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 13 - Design Patterns\obj\Debug\net6.0\Day 13 - Design Patterns.AssemblyInfoInputs.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 13 - Design Patterns\obj\Debug\net6.0\Day 13 - Design Patterns.AssemblyInfo.cs
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 13 - Design Patterns\obj\Debug\net6.0\Day 13 - Design Patterns.csproj.CoreCompileInputs.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 13 - Design Patterns\obj\Debug\net6.0\Day 13 - Design Patterns.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 13 - Design Patterns\obj\Debug\net6.0\refint\Day 13 - Design Patterns.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 13 - Design Patterns\obj\Debug\net6.0\Day 13 - Design Patterns.pdb
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 13 - Design Patterns\obj\Debug\net6.0\Day 13 - Design Patterns.genruntimeconfig.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 13 - Design Patterns\obj\Debug\net6.0\ref\Day 13 - Design Patterns.dll

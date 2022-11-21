@@ -33,6 +33,18 @@
             facade.PlaceOrder();
 
 
+            // Behavioural Design Pattern
+
+            // Template Design Pattern
+
+            WoodHouse woodHouse = new WoodHouse();
+            ConcreteHouse concreteHouse = new ConcreteHouse();
+
+            woodHouse.BuildHouse();
+            concreteHouse.BuildHouse();
+
+
+
         }
 
 

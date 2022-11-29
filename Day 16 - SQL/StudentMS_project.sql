@@ -80,4 +80,4 @@ alter table StudentInfo add dep_id int FOREIGN KEY REFERENCES Department(dep_id)
 select * from StudentInfo
 
 -- INNER Join with three tables
-select * from Enrollment E inner join StudentInfo S on E.stu_id = S.Stu_id inner join Courses C on E.cr_id = C.cr_id
+select E.er_id, S.Stu_id, S.Stu_Name, Stu_Email, C.cr_id, C.cr_Name, C.cr_hr from Enrollment E inner join StudentInfo S on E.stu_id = S.Stu_id inner join Courses C on E.cr_id = C.cr_id

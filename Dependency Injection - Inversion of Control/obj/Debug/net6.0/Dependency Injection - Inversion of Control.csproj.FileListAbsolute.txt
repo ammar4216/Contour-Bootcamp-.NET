@@ -1,0 +1,15 @@
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Dependency Injection - Inversion of Control\bin\Debug\net6.0\Dependency Injection - Inversion of Control.exe
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Dependency Injection - Inversion of Control\bin\Debug\net6.0\Dependency Injection - Inversion of Control.deps.json
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Dependency Injection - Inversion of Control\bin\Debug\net6.0\Dependency Injection - Inversion of Control.runtimeconfig.json
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Dependency Injection - Inversion of Control\bin\Debug\net6.0\Dependency Injection - Inversion of Control.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Dependency Injection - Inversion of Control\bin\Debug\net6.0\Dependency Injection - Inversion of Control.pdb
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Dependency Injection - Inversion of Control\obj\Debug\net6.0\Dependency Injection - Inversion of Control.csproj.AssemblyReference.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Dependency Injection - Inversion of Control\obj\Debug\net6.0\Dependency Injection - Inversion of Control.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Dependency Injection - Inversion of Control\obj\Debug\net6.0\Dependency Injection - Inversion of Control.AssemblyInfoInputs.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Dependency Injection - Inversion of Control\obj\Debug\net6.0\Dependency Injection - Inversion of Control.AssemblyInfo.cs
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Dependency Injection - Inversion of Control\obj\Debug\net6.0\Dependency Injection - Inversion of Control.csproj.CoreCompileInputs.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Dependency Injection - Inversion of Control\obj\Debug\net6.0\Dependency Injection - Inversion of Control.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Dependency Injection - Inversion of Control\obj\Debug\net6.0\refint\Dependency Injection - Inversion of Control.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Dependency Injection - Inversion of Control\obj\Debug\net6.0\Dependency Injection - Inversion of Control.pdb
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Dependency Injection - Inversion of Control\obj\Debug\net6.0\Dependency Injection - Inversion of Control.genruntimeconfig.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Dependency Injection - Inversion of Control\obj\Debug\net6.0\ref\Dependency Injection - Inversion of Control.dll

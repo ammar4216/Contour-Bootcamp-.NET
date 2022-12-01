@@ -1871,11 +1871,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmedamma\\Documents\\Contour Bootcamp .NET\\Day 18 - EntityFrameworkWithMVC\\Day 18 - EntityFrameworkWithMVC.csproj",
+      "projectUniqueName": "C:\\Users\\ahmedamma\\Documents\\Contour Bootcamp .NET\\EntityFrameworkWithMVC\\Day 18 - EntityFrameworkWithMVC.csproj",
       "projectName": "Day 18 - EntityFrameworkWithMVC",
-      "projectPath": "C:\\Users\\ahmedamma\\Documents\\Contour Bootcamp .NET\\Day 18 - EntityFrameworkWithMVC\\Day 18 - EntityFrameworkWithMVC.csproj",
+      "projectPath": "C:\\Users\\ahmedamma\\Documents\\Contour Bootcamp .NET\\EntityFrameworkWithMVC\\Day 18 - EntityFrameworkWithMVC.csproj",
       "packagesPath": "C:\\Users\\ahmedamma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmedamma\\Documents\\Contour Bootcamp .NET\\Day 18 - EntityFrameworkWithMVC\\obj\\",
+      "outputPath": "C:\\Users\\ahmedamma\\Documents\\Contour Bootcamp .NET\\EntityFrameworkWithMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmedamma\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,3 +1,4 @@
+using Day_18___EntityFrameworkWithMVC.Extra;
 using Day_18___EntityFrameworkWithMVC.MyDbContext;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,6 +17,12 @@ namespace Day_18___EntityFrameworkWithMVC
             builder.Services.AddDbContext<StudentMS>(
              option => option.UseSqlServer(@"Data Source=.;Database=StudentMS;Integrated Security=True;")
              );
+
+
+            // Dependency Injection and Inversion of Control
+            builder.Services.AddSingleton<IDependency, Dependency1>();
+
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

@@ -1,0 +1,99 @@
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\bin\Debug\net6.0\appsettings.json
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.staticwebassets.runtime.json
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.exe
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.deps.json
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.runtimeconfig.json
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.dll
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.pdb
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.csproj.AssemblyReference.cache
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.AssemblyInfoInputs.cache
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.AssemblyInfo.cs
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.csproj.CoreCompileInputs.cache
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.RazorAssemblyInfo.cache
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.RazorAssemblyInfo.cs
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\scopedcss\bundle\Day 17 - MVCwithDatabase.styles.css
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\scopedcss\projectbundle\Day 17 - MVCwithDatabase.bundle.scp.css
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.dll
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\refint\Day 17 - MVCwithDatabase.dll
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.pdb
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.genruntimeconfig.cache
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\ref\Day 17 - MVCwithDatabase.dll
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ahmedamma\Documents\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.csproj.CopyComplete
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\bin\Debug\net6.0\appsettings.json
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.staticwebassets.runtime.json
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.exe
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.deps.json
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.runtimeconfig.json
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.pdb
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.csproj.AssemblyReference.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.AssemblyInfoInputs.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.AssemblyInfo.cs
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.csproj.CoreCompileInputs.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.RazorAssemblyInfo.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.RazorAssemblyInfo.cs
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\scopedcss\bundle\Day 17 - MVCwithDatabase.styles.css
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\scopedcss\projectbundle\Day 17 - MVCwithDatabase.bundle.scp.css
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.csproj.CopyComplete
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\refint\Day 17 - MVCwithDatabase.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.pdb
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.genruntimeconfig.cache
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\Day 17 - MVCwithDatabase\obj\Debug\net6.0\ref\Day 17 - MVCwithDatabase.dll
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\bin\Debug\net6.0\appsettings.json
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.staticwebassets.runtime.json
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.exe
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.deps.json
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.runtimeconfig.json
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.dll
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\bin\Debug\net6.0\Day 17 - MVCwithDatabase.pdb
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.csproj.AssemblyReference.cache
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.AssemblyInfoInputs.cache
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.AssemblyInfo.cs
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.csproj.CoreCompileInputs.cache
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.RazorAssemblyInfo.cache
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.RazorAssemblyInfo.cs
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\scopedcss\bundle\Day 17 - MVCwithDatabase.styles.css
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\scopedcss\projectbundle\Day 17 - MVCwithDatabase.bundle.scp.css
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.csproj.CopyComplete
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.dll
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\refint\Day 17 - MVCwithDatabase.dll
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.pdb
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\Day 17 - MVCwithDatabase.genruntimeconfig.cache
+C:\Users\ahmedamma\Downloads\Day 17 - MVCwithDatabase\obj\Debug\net6.0\ref\Day 17 - MVCwithDatabase.dll

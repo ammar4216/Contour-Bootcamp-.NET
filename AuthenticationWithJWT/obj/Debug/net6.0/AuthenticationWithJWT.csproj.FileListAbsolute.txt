@@ -244,3 +244,6 @@ C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\AuthenticationWithJWT\obj\Deb
 C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\AuthenticationWithJWT\obj\Debug\net6.0\AuthenticationWithJWT.pdb
 C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\AuthenticationWithJWT\obj\Debug\net6.0\AuthenticationWithJWT.genruntimeconfig.cache
 C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\AuthenticationWithJWT\obj\Debug\net6.0\ref\AuthenticationWithJWT.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\AuthenticationWithJWT\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\AuthenticationWithJWT\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ahmedamma\Documents\Contour Bootcamp .NET\AuthenticationWithJWT\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

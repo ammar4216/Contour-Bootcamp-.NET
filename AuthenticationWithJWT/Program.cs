@@ -1,3 +1,7 @@
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Text;
+
 namespace AuthenticationWithJWT
 {
     public class Program
@@ -9,6 +13,17 @@ namespace AuthenticationWithJWT
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
+                {
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("dsagfdsgdsgdsgdsgdsgdagdsgdsfeawfascxzcfaess")),
+            };
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -18,7 +33,16 @@ namespace AuthenticationWithJWT
             }
             app.UseStaticFiles();
 
+            //app.Use(async (context, next) =>
+            //{
+            //    var token = context.Request.Cookies["Token"];
+            //    context.Request.Headers.Add("Authorization", "Bearer " + token);
+            //    await next();
+            //});
+
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

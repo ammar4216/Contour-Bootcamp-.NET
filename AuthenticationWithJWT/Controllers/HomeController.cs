@@ -68,8 +68,21 @@ namespace AuthenticationWithJWT.Controllers
 
         public IActionResult Privacy()
         {
-            return View();
+            if (User.Identity.IsAuthenticated)
+            {
+                return View();
+            }
+            else
+            {
+                return View("Error");
+            }
+            
         }
+
+        //public ActionResult Logout()
+        //{
+
+        //}
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

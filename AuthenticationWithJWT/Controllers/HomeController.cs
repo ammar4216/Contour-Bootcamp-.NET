@@ -1,4 +1,6 @@
-﻿using AuthenticationWithJWT.Models;
+﻿using AuthenticationWithJWT.Data;
+using AuthenticationWithJWT.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.Diagnostics;
@@ -11,9 +13,11 @@ namespace AuthenticationWithJWT.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private IdentityAuthDB _identityAuthDB;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IdentityAuthDB identityAuthDB)
         {
+            _identityAuthDB = identityAuthDB;
             _logger = logger;
         }
 
@@ -29,8 +33,10 @@ namespace AuthenticationWithJWT.Controllers
 
         public IActionResult Submit(Login login)
         {
-            if(login.UserName == "admin" && login.Password == "admin")
-            {
+            var data = _identityAuthDB.identityAuthDBs.Where(obj=>obj.UserName==login.UserName && obj.Password == login.Password).FirstOrDefault();
+            
+
+
                 ViewData["UserName"] = login.UserName;
 
 
@@ -40,8 +46,8 @@ namespace AuthenticationWithJWT.Controllers
 
                 var claims = new List<Claim>()
                 {
-                    new Claim("UserName",login.UserName),
-                    new Claim("Data","Hello World!"),
+                    new Claim("UserName",data.UserName),
+                    new Claim("MyRole",data.MyRole),
                 };
 
                 var jwt = new JwtSecurityToken(
@@ -62,20 +68,14 @@ namespace AuthenticationWithJWT.Controllers
                 });
 
                 
-            }
+            
             return View();
         }
 
+        [Authorize(Policy = "IsAdmin")]
         public IActionResult Privacy()
         {
-            if (User.Identity.IsAuthenticated)
-            {
-                return View();
-            }
-            else
-            {
-                return View("Error");
-            }
+           return View();
             
         }
 

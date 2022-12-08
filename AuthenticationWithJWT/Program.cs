@@ -1,6 +1,8 @@
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
+using AuthenticationWithJWT.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace AuthenticationWithJWT
 {
@@ -12,6 +14,17 @@ namespace AuthenticationWithJWT
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<IdentityAuthDB>(
+                option => option.UseSqlServer(@"Data Source=.;Database=IdentityAuthDB;Integrated Security=True;")
+                );
+
+            builder.Services.AddAuthorization(
+                option => option.AddPolicy("IsAdmin", policy =>
+                {
+                    policy.RequireClaim("MyRole", "Admin");
+                }
+                ));
 
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
             {
@@ -33,12 +46,12 @@ namespace AuthenticationWithJWT
             }
             app.UseStaticFiles();
 
-            //app.Use(async (context, next) =>
-            //{
-            //    var token = context.Request.Cookies["Token"];
-            //    context.Request.Headers.Add("Authorization", "Bearer " + token);
-            //    await next();
-            //});
+            app.Use(async (context, next) =>
+            {
+                var token = context.Request.Cookies["Token"];
+                context.Request.Headers.Add("Authorization", "Bearer " + token);
+                await next();
+            });
 
             app.UseRouting();
 

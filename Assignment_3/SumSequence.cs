@@ -8,7 +8,7 @@ namespace Assignment_3
 {
     public class SumSequence
     {
-       public string sumSequence(string num)
+       public int sumSequence(string num)
         {
 
             int sum = 0;

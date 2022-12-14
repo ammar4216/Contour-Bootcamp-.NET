@@ -31,5 +31,10 @@ namespace CRUDwithEntityframework.Models
         [RegularExpression(@"^[\w-\._\+%]+@(?:[\w-]+\.)+[\w]{2,6}$", ErrorMessage = "Please enter a valid email address")]
         public string Customer_Email { get; set; }
 
+        [ForeignKey("Address")]
+        public int AddressId { get; set; }
+
+        public Address Address { get; set; }
+
     }
 }

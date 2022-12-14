@@ -22,6 +22,31 @@ namespace CRUDwithEntityframework.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("CRUDwithEntityframework.Models.Address", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("State")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("addresses");
+                });
+
             modelBuilder.Entity("CRUDwithEntityframework.Models.Customer", b =>
                 {
                     b.Property<int>("Customer_Id")
@@ -29,6 +54,9 @@ namespace CRUDwithEntityframework.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Customer_Id"), 1L, 1);
+
+                    b.Property<int>("AddressId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Customer_Email")
                         .IsRequired()
@@ -48,7 +76,20 @@ namespace CRUDwithEntityframework.Migrations
 
                     b.HasKey("Customer_Id");
 
+                    b.HasIndex("AddressId");
+
                     b.ToTable("customers");
+                });
+
+            modelBuilder.Entity("CRUDwithEntityframework.Models.Customer", b =>
+                {
+                    b.HasOne("CRUDwithEntityframework.Models.Address", "Address")
+                        .WithMany()
+                        .HasForeignKey("AddressId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Address");
                 });
 #pragma warning restore 612, 618
         }

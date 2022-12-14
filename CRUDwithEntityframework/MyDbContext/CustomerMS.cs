@@ -11,5 +11,7 @@ namespace CRUDwithEntityframework.MyDbContext
 
         }
         public DbSet<Customer> customers { get; set; }
+
+        public DbSet<Address> addresses { get; set; }
     }
 }

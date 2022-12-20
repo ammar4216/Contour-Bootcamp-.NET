@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahmedamma\\Documents\\APIWithASPMVC\\APIWithASPMVC.csproj": {}
+    "C:\\Users\\ahmedamma\\Documents\\Contour Bootcamp .NET\\APIWithASPMVC\\APIWithASPMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahmedamma\\Documents\\APIWithASPMVC\\APIWithASPMVC.csproj": {
+    "C:\\Users\\ahmedamma\\Documents\\Contour Bootcamp .NET\\APIWithASPMVC\\APIWithASPMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmedamma\\Documents\\APIWithASPMVC\\APIWithASPMVC.csproj",
+        "projectUniqueName": "C:\\Users\\ahmedamma\\Documents\\Contour Bootcamp .NET\\APIWithASPMVC\\APIWithASPMVC.csproj",
         "projectName": "APIWithASPMVC",
-        "projectPath": "C:\\Users\\ahmedamma\\Documents\\APIWithASPMVC\\APIWithASPMVC.csproj",
+        "projectPath": "C:\\Users\\ahmedamma\\Documents\\Contour Bootcamp .NET\\APIWithASPMVC\\APIWithASPMVC.csproj",
         "packagesPath": "C:\\Users\\ahmedamma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmedamma\\Documents\\APIWithASPMVC\\obj\\",
+        "outputPath": "C:\\Users\\ahmedamma\\Documents\\Contour Bootcamp .NET\\APIWithASPMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahmedamma\\AppData\\Roaming\\NuGet\\NuGet.Config",

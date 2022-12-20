@@ -25,11 +25,12 @@ namespace APIWithASPMVC.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Movie>>> GetMovies()
         {
-            return await _context.Movie.ToListAsync();
+            await _context.Movie.ToListAsync();
+            return Ok();
         }
 
         [HttpPost]
-        public async Task<ActionResult<Movie>> InsertMovie(Movie movie)
+        public async Task<ActionResult<Movie>> PostMovie(Movie movie)
         {
             if(movie == null)
             {
@@ -38,9 +39,19 @@ namespace APIWithASPMVC.Controllers
             else
             {
                 _context.Movie.Add(movie);
+                await _context.SaveChangesAsync();
             }
 
-            await _context.SaveChanges();
+            return Ok();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> PutMovie(int id, Movie movie)
+        {
+            if(id != movie.Id)
+            {
+                return BadRequest();
+            }
         }
         
     }

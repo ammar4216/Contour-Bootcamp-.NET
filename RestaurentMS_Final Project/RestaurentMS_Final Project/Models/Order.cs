@@ -1,7 +1,10 @@
-﻿namespace RestaurentMS_Final_Project.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace RestaurentMS_Final_Project.Models
 {
-    public class Order
+    public class Order : TimeStampClass
     {
+        [Key]
         public int Id { get; set; }
 
         public int OrderCreatedPersonId { get; set; }
@@ -11,8 +14,6 @@
         public int MenuItemId { get; set; }
 
         public int PaymentId { get; set; }
-
-        public DateTime OrderCreatedAt { get; set; }
 
         public User OrderCreatedUser { get; set; }
 

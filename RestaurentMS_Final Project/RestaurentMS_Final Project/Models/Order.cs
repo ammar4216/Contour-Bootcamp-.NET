@@ -17,9 +17,7 @@ namespace RestaurentMS_Final_Project.Models
 
         public User OrderCreatedUser { get; set; }
 
-        public MenuCategory menuCategory { get; set; }  
-
-        public MenuItem menuItem { get; set; }  
+        public IList<MenuItem> menuItem { get; set; }  
 
         public PaymentType payment { get; set; }
 

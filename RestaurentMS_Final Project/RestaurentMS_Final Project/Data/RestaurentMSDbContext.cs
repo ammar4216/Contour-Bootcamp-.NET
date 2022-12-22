@@ -48,5 +48,17 @@ namespace RestaurentMS_Final_Project.Data
         public DbSet<MenuItem> menuItems { get; set; }
 
         public DbSet<MenuCategory> menuCategories { get; set; }
+
+        public DbSet<User> users { get; set; }
+
+        public DbSet<Address> addresses { get; set; }
+
+        public DbSet<Roles> roles { get; set; }
+
+        public DbSet<PaymentType> paymentTypes { get; set; }
+
+        public DbSet<Reservation> reservations { get; set; }
+
+        public DbSet<Order> orders { get; set; }
     }
 }

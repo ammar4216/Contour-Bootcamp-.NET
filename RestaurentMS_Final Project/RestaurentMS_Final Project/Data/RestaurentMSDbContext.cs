@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using RestaurentMS_Final_Project.Models;
 
 namespace RestaurentMS_Final_Project.Data
 {
-    public class RestaurentMSDbContext : DbContext
+    public class RestaurentMSDbContext : IdentityDbContext<AppUser>
     {
         public RestaurentMSDbContext(DbContextOptions<RestaurentMSDbContext> options) : base(options) { }
 
@@ -45,15 +47,11 @@ namespace RestaurentMS_Final_Project.Data
             }
         }
 
+        public DbSet<AppUser> AppUser { get; set; }
+
         public DbSet<MenuItem> menuItems { get; set; }
 
         public DbSet<MenuCategory> menuCategories { get; set; }
-
-        public DbSet<User> users { get; set; }
-
-        public DbSet<Address> addresses { get; set; }
-
-        public DbSet<Roles> roles { get; set; }
 
         public DbSet<PaymentType> paymentTypes { get; set; }
 

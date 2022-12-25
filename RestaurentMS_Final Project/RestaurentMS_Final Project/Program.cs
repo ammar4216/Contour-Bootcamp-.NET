@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RestaurentMS_Final_Project.Data;
+using RestaurentMS_Final_Project.Models;
 
 namespace RestaurentMS_Final_Project
 {
@@ -13,6 +15,19 @@ namespace RestaurentMS_Final_Project
                op => op.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
                 );
 
+            builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<RestaurentMSDbContext>().AddDefaultTokenProviders();
+
+
+            builder.Services.Configure<IdentityOptions>(options =>
+            {
+                // Default Password settings.
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequiredLength = 6;
+                options.Password.RequiredUniqueChars = 0;
+            });
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 

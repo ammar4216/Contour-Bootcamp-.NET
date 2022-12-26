@@ -59,8 +59,7 @@ namespace RestaurentMS_Final_Project.Services
                 RequestUri = new Uri("https://rapidprod-sendgrid-v1.p.rapidapi.com/mail/send"),
                 Headers =
                 {
-                    { "X-RapidAPI-Key", "fa909b48dcmsh6a563a10771124ap176d96jsn1254af686ff5" },
-                    { "X-RapidAPI-Host", "rapidprod-sendgrid-v1.p.rapidapi.com" },
+                    
 
 
                 },

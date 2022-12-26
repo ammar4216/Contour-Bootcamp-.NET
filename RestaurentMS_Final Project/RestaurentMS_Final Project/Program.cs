@@ -1,7 +1,10 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RestaurentMS_Final_Project.Data;
+using RestaurentMS_Final_Project.Helpers;
+using RestaurentMS_Final_Project.Interfaces;
 using RestaurentMS_Final_Project.Models;
+using RestaurentMS_Final_Project.Services;
 
 namespace RestaurentMS_Final_Project
 {
@@ -31,6 +34,10 @@ namespace RestaurentMS_Final_Project
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            // SendGrid Email Service
+            builder.Services.AddTransient<ISendGridEmail, SendGridEmail>();
+            builder.Services.Configure<AuthMessageSenderOptions>(builder.Configuration.GetSection("SendGrid"));
+
 
 
             var app = builder.Build();
@@ -47,7 +54,7 @@ namespace RestaurentMS_Final_Project
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(

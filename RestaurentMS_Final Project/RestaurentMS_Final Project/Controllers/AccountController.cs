@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using RestaurentMS_Final_Project.Interfaces;
 using RestaurentMS_Final_Project.Models;
 using RestaurentMS_Final_Project.ViewModels;
 
@@ -9,11 +10,13 @@ namespace RestaurentMS_Final_Project.Controllers
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
+        private readonly ISendGridEmail _sendGridEmail;
 
-        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
+        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, ISendGridEmail sendGridEmail)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _sendGridEmail = sendGridEmail;
         }
 
         public IActionResult Index()
@@ -78,6 +81,39 @@ namespace RestaurentMS_Final_Project.Controllers
                 }
             }
             return View(loginViewModel);
+        }
+
+        //Forgot Password
+        [HttpGet]
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByEmailAsync(model.Email);
+                if (user == null)
+                {
+                    return RedirectToAction("ForgotPasswordConfirmation");
+                }
+                var code = await _userManager.GeneratePasswordResetTokenAsync(user);
+                var callbackurl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: HttpContext.Request.Scheme);
+
+                await _sendGridEmail.SendEmailAsync(model.Email, "Reset Email Confirmation", "Please reset email by going to this " +
+                    "<a href=\"" + callbackurl + "\">link</a>");
+                return RedirectToAction("ForgotPasswordConfirmation");
+            }
+            return View(model);
+        }
+
+        // Forgot Password Confirmation
+        public IActionResult ForgotPasswordConfirmation()
+        {
+            return View();
         }
 
         // Logout

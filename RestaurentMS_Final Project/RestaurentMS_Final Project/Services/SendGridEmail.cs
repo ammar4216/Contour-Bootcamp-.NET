@@ -21,15 +21,16 @@ namespace RestaurentMS_Final_Project.Services
 
         public async Task SendEmailAsync(string toEmail, string subject, string message)
         {
-            //if (string.IsNullOrEmpty(Options.ApiKey))
-            //{
-            //    throw new Exception("Null SendGridKey");
-            //}
-            await Execute(subject, message, toEmail);
+            if (string.IsNullOrEmpty(Options.ApiKey))
+            {
+                throw new Exception("Null SendGridKey");
+            }
+            await Execute(Options.ApiKey, subject, message, toEmail);
         }
 
-        private async Task Execute(string subject, string message, string toEmail)
+        private async Task Execute(string apiKey, string subject, string message, string toEmail)
         {
+            string host = "rapidprod-sendgrid-v1.p.rapidapi.com";
             //var client = new SendGridClient(apiKey);
             //var msg = new SendGridMessage()
             //{
@@ -59,8 +60,9 @@ namespace RestaurentMS_Final_Project.Services
                 RequestUri = new Uri("https://rapidprod-sendgrid-v1.p.rapidapi.com/mail/send"),
                 Headers =
                 {
-                    
 
+                    { "X-RapidAPI-Key", apiKey },
+                    { "X-RapidAPI-Host", host }
 
                 },
                 Content = new StringContent(res, Encoding.UTF8, "application/json"),

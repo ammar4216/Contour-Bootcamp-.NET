@@ -265,3 +265,6 @@ C:\Users\ahmedamma\Documents\Contour-Bootcamp-.NET\RestaurentMS_Final Project\Re
 C:\Users\ahmedamma\Documents\Contour-Bootcamp-.NET\RestaurentMS_Final Project\RestaurentMS_Final Project\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\ahmedamma\Documents\Contour-Bootcamp-.NET\RestaurentMS_Final Project\RestaurentMS_Final Project\bin\Debug\net6.0\SendGrid.dll
 C:\Users\ahmedamma\Documents\Contour-Bootcamp-.NET\RestaurentMS_Final Project\RestaurentMS_Final Project\bin\Debug\net6.0\StarkbankEcdsa.dll
+C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\bin\Debug\net6.0\SendGrid.dll
+C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\bin\Debug\net6.0\StarkbankEcdsa.dll

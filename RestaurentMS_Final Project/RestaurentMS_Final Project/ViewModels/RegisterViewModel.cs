@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System.ComponentModel.DataAnnotations;
 
 namespace RestaurentMS_Final_Project.ViewModels
 {
@@ -28,6 +29,9 @@ namespace RestaurentMS_Final_Project.ViewModels
 
 
         public string? returnUrl { get; set; }
+
+        public IEnumerable<SelectListItem>? RoleList { get; set; }
+        public string? RoleSelected { get; set; }
 
 
 

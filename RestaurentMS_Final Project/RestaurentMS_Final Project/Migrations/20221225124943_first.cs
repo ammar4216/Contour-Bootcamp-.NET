@@ -23,6 +23,8 @@ namespace RestaurentMS_Final_Project.Migrations
                     table.PrimaryKey("PK_AspNetRoles", x => x.Id);
                 });
 
+            
+
             migrationBuilder.CreateTable(
                 name: "AspNetUsers",
                 columns: table => new

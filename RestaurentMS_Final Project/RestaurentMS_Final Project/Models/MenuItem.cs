@@ -14,6 +14,10 @@ namespace RestaurentMS_Final_Project.Models
         [Required]
         public double MenuItemPrice { get; set; }
 
+        [Required]
+        [Display(Name = "Menu Image")]
+        public string MenuImage { get; set; }
+
         public int menuCategoryId { get; set; }
         public MenuCategory menuCategory { get; set; }
 

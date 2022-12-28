@@ -38,7 +38,7 @@ namespace RestaurentMS_Final_Project.Controllers
 
         // Create New User
         [HttpGet]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> Register(string? returnUrl = null)
         {
             if(!await _roleManager.RoleExistsAsync("Admin"))
@@ -142,7 +142,7 @@ namespace RestaurentMS_Final_Project.Controllers
                 var callbackurl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: HttpContext.Request.Scheme);
 
                 await _sendGridEmail.SendEmailAsync(model.Email, "Reset Email Confirmation", "Please reset email by going to this " +
-                    "<a href=\"" + callbackurl + "\">link</a>");
+                    "<a href='"+callbackurl+"'>Link</a>");
                 return RedirectToAction("ForgotPasswordConfirmation");
             }
             return View(model);

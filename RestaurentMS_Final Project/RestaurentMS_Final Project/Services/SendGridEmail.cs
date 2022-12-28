@@ -42,7 +42,6 @@ namespace RestaurentMS_Final_Project.Services
             //msg.AddTo(new EmailAddress(toEmail));
 
             //// Disable click tracking.
-            //// See https://sendgrid.com/docs/User_Guide/Settings/tracking.html
             //msg.SetClickTracking(false, false);
             //var response = await client.SendEmailAsync(msg);
             //var dummy = response.StatusCode;
@@ -53,6 +52,7 @@ namespace RestaurentMS_Final_Project.Services
 
 
             var res = "{\"personalizations\": [{\"to\": [{\"email\": \"" + toEmail + "\"}],\"subject\": \"" + subject + "\"}],\"from\": {\"email\": \"from_address@example.com\"}, \"content\": [ {\"type\": \"text/html\",\"value\": \"" + message + "\" }]}";
+
             var client = new HttpClient();
             var request = new HttpRequestMessage
             {
@@ -65,7 +65,17 @@ namespace RestaurentMS_Final_Project.Services
                     { "X-RapidAPI-Host", host }
 
                 },
-                Content = new StringContent(res, Encoding.UTF8, "application/json"),
+                //Content = new StringContent(res, Encoding.UTF8, "application/json"),
+                
+                Content = new StringContent(res)
+                {
+                    Headers =
+                        {
+                            ContentType = new MediaTypeHeaderValue("application/json")
+                        }
+                }
+
+
 
             };
 

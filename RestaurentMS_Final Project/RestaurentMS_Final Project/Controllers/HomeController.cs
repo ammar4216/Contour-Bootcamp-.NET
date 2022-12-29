@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RestaurentMS_Final_Project.Data;
 using RestaurentMS_Final_Project.Models;
 using System.Diagnostics;
 
@@ -7,6 +8,7 @@ namespace RestaurentMS_Final_Project.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly RestaurentMSDbContext _context;
 
         public HomeController(ILogger<HomeController> logger)
         {

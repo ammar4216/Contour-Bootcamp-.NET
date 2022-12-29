@@ -10,5 +10,7 @@ namespace RestaurentMS_Final_Project.Models
         [Required]
         public string MenuCategoryName { get; set; }
 
+        [Required]
+        public string MenuCategoryDescription { get; set; }
     }
 }

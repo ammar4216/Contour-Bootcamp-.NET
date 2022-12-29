@@ -1,0 +1,53 @@
+﻿@model IEnumerable<AppUser>
+
+    @{
+    ViewData["Title"] = "Index";
+}
+
+@if (TempData["ResultOk"] != null)
+{
+    <h1 class="alert-success">@TempData["ResultOk"]</h1>
+}
+
+
+<div class="container shadow p-5">
+
+    <h1 class="text-center mb-3">User List</h1>
+
+    <div class="col mb-3">
+        <a asp-controller="Account" asp-action="Register" class="btn btn-lg btn-primary"><i class="bi bi-file-plus-fill"></i>Add New User</a>
+    </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td width="20%">
+                        @item.Name
+                    </td>
+                    <td width="20%">
+                        @item.UserName
+                    </td>
+                    <td width="30%">
+                        @item.Email
+                    </td>
+                    <td>
+                        <div role="group" class="w-30 btn-group">
+                            <a asp-controller="User" asp-action="Edit" asp-route-id="@item.Id" class=" btn btn-sm btn-primary"><i class="bi bi-pencil-square ms-md-1"></i>Edit</a>&nbsp;
+                            <a asp-controller="User" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger"><i class="bi bi-trash-fill"></i>Delete</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

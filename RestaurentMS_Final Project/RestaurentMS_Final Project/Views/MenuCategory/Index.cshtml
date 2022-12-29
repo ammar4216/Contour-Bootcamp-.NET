@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MenuCategory>
+
+    @{
+    ViewData["Title"] = "Index";
+}
+
+@if (TempData["ResultOk"] != null)
+{
+    <h1 class="alert-success">@TempData["ResultOk"]</h1>
+}
+else
+{
+     <h1 class="alert-warning">@TempData["ResultNotOk"]</h1>
+}
+
+<div class="container shadow p-5">
+
+    <h1 class="text-center mb-3">Menu Categories</h1>
+
+    <div class="col mb-3">
+        <a asp-controller="MenuCategory" asp-action="Create" class="btn btn-lg btn-primary"><i class="bi bi-file-plus-fill"></i>Add Category</a>
+    </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Category Name</th>
+                <th scope="col">Description</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td width="20%">
+                        @item.MenuCategoryName
+                    </td>
+                    <td width="60%">
+                        @item.MenuCategoryDescription
+                    </td>
+                    <td>
+                        <div role="group" class="w-20 btn-group">
+                            <a asp-controller="MenuCategory" asp-action="Edit" asp-route-id="@item.Id" class=" btn btn-sm btn-primary"><i class="bi bi-pencil-square"></i>Edit</a>&nbsp;
+                            <a asp-controller="MenuCategory" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger"><i class="bi bi-trash-fill"></i>Delete</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

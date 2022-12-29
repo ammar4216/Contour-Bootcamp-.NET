@@ -31,26 +31,6 @@ namespace RestaurentMS_Final_Project.Services
         private async Task Execute(string apiKey, string subject, string message, string toEmail)
         {
             string host = "rapidprod-sendgrid-v1.p.rapidapi.com";
-            //var client = new SendGridClient(apiKey);
-            //var msg = new SendGridMessage()
-            //{
-            //    From = new EmailAddress("aym4216@gmail.com"),
-            //    Subject = subject,
-            //    PlainTextContent = message,
-            //    HtmlContent = message
-            //};
-            //msg.AddTo(new EmailAddress(toEmail));
-
-            //// Disable click tracking.
-            //msg.SetClickTracking(false, false);
-            //var response = await client.SendEmailAsync(msg);
-            //var dummy = response.StatusCode;
-            //var dummy2 = response.Headers;
-            //_logger.LogInformation(response.IsSuccessStatusCode
-            //                       ? $"Email to {toEmail} queued successfully!"
-            //                       : $"Failure Email to {toEmail}");
-
-
             var res = "{\"personalizations\": [{\"to\": [{\"email\": \"" + toEmail + "\"}],\"subject\": \"" + subject + "\"}],\"from\": {\"email\": \"from_address@example.com\"}, \"content\": [ {\"type\": \"text/html\",\"value\": \"" + message + "\" }]}";
 
             var client = new HttpClient();

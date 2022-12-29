@@ -32,6 +32,15 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <li class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" style="background-color:white;color:black;border:none;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-funnel-fill"></i> Menu Categories
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" asp-controller="MenuCategory" asp-action="Index">Categories List</a></li>
+                                    <li><a class="dropdown-item" asp-controller="MenuCategory" asp-action="Create">Add New Category</a></li>
+                                </ul>
+                            </li>
                         @if (SignInManager.IsSignedIn(User))
                         {
                             <li class="nav-item">

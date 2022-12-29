@@ -9,11 +9,7 @@ namespace RestaurentMS_Final_Project.Data
     {
         public RestaurentMSDbContext(DbContextOptions<RestaurentMSDbContext> options) : base(options) { }
 
-        public override int SaveChanges(bool acceptAllChangesOnSuccess)
-        {
-            OnBeforeSaving();
-            return base.SaveChanges(acceptAllChangesOnSuccess);
-        }
+        
 
         public override async Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default(CancellationToken))
         {
@@ -35,7 +31,7 @@ namespace RestaurentMS_Final_Project.Data
                     {
                         case EntityState.Modified:
                             trackable.UpdatedAt = utcNow;
-                            entry.Property("CreatedOn").IsModified = false;
+                            entry.Property("CreatedAt").IsModified = false;
                             break;
 
                         case EntityState.Added:

@@ -20,6 +20,16 @@ namespace RestaurentMS_Final_Project
 
             builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<RestaurentMSDbContext>().AddDefaultTokenProviders();
 
+            //builder.Services.ConfigureApplicationCookie(
+            //    opt =>
+            //    {
+            //        opt.ExpireTimeSpan = TimeSpan.FromMinutes(60);
+            //        opt.LoginPath = "/Account/Login";
+            //        opt.SlidingExpiration = true;
+
+            //    }
+
+            //    ) ;
 
             builder.Services.Configure<IdentityOptions>(options =>
             {

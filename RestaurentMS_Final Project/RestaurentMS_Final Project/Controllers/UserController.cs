@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using RestaurentMS_Final_Project.Data;
 using RestaurentMS_Final_Project.Models;
 using RestaurentMS_Final_Project.ViewModels;
@@ -8,8 +10,10 @@ namespace RestaurentMS_Final_Project.Controllers
     public class UserController : Controller
     {
         private readonly RestaurentMSDbContext _context;
-        public UserController(RestaurentMSDbContext context)
+        private readonly UserManager<AppUser> _userManager;
+        public UserController(RestaurentMSDbContext context, UserManager<AppUser> userManager)
         {
+            _userManager= userManager;
             _context = context;
         }
 
@@ -17,70 +21,96 @@ namespace RestaurentMS_Final_Project.Controllers
         public IActionResult Index()
         {
             
-            IEnumerable<AppUser> userObj = _context.AppUser;
-            return View(userObj);
+            var userList = _context.AppUser.ToList();
+            var userRole = _context.UserRoles.ToList();
+            var roles = _context.Roles.ToList();
+
+
+            foreach (var user in userList)
+            {
+                var role = userRole.FirstOrDefault(u => u.UserId == user.Id);
+                if (role == null)
+                {
+                    user.Role = "None";
+                }
+                else
+                {
+                    user.Role = roles.FirstOrDefault(u => u.Id == role.RoleId).Name;
+                }
+            }
+
+            return View(userList);
         }
 
         // Edit User
-        public IActionResult Edit(string? id)
+        public IActionResult Edit(string userId)
         {
-            if (id == null)
+            var user = _context.AppUser.FirstOrDefault(u => u.Id == userId);
+            if (user == null)
             {
                 return NotFound();
             }
-            var updateUser = _context.AppUser.Find(id);
-
-            if (updateUser == null)
+            var userRole = _context.UserRoles.ToList();
+            var roles = _context.Roles.ToList();
+            var role = userRole.FirstOrDefault(u => u.UserId == user.Id);
+            if (role != null)
             {
-                return NotFound();
+                user.RoleId = roles.FirstOrDefault(u => u.Id == role.RoleId).Id;
             }
-            return View(updateUser);
+            user.RoleList = _context.Roles.Select(u => new SelectListItem
+            {
+                Text = u.Name,
+                Value = u.Id
+            });
+            return View(user);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(AppUser user)
+        public async Task<IActionResult> Edit(AppUser user)
         {
             if (ModelState.IsValid)
             {
-                _context.AppUser.Update(user);
-                _context.SaveChanges();
-                TempData["ResultOk"] = "User Updated Successfully!";
-                return RedirectToAction("Index");
-            }
-            return RedirectToAction("Index");
-        }
+                var userDbValue = _context.AppUser.FirstOrDefault(u => u.Id == user.Id);
+                if (userDbValue == null)
+                {
+                    return NotFound();
+                }
+                var userRole = _context.UserRoles.FirstOrDefault(u => u.UserId == userDbValue.Id);
+                if (userRole != null)
+                {
+                    var previousRoleName = _context.Roles.Where(u => u.Id == userRole.RoleId).Select(e => e.Name).FirstOrDefault();
+                    await _userManager.RemoveFromRoleAsync(userDbValue, previousRoleName);
 
+                }
+
+                await _userManager.AddToRoleAsync(userDbValue, _context.Roles.FirstOrDefault(u => u.Id == user.RoleId).Name);
+                _context.SaveChanges();
+                return RedirectToAction(nameof(Index));
+            }
+
+
+            user.RoleList = _context.Roles.Select(u => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+            {
+                Text = u.Name,
+                Value = u.Id
+            });
+            return View(user);
+        }
 
         // Delete User
-        public IActionResult Delete(string? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-            var deleteUser = _context.AppUser.Find(id);
-
-            if (deleteUser == null)
-            {
-                return NotFound();
-            }
-            return View(deleteUser);
-        }
-
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult DeleteUser(string? id)
+        public IActionResult Delete(string userId)
         {
-            var deleterecord = _context.AppUser.Find(id);
-            if (deleterecord == null)
+            var user = _context.AppUser.FirstOrDefault(u => u.Id == userId);
+            if (user == null)
             {
                 return NotFound();
             }
-            _context.AppUser.Remove(deleterecord);
+            _context.AppUser.Remove(user);
             _context.SaveChanges();
-            TempData["ResultOk"] = "User Record Deleted Successfully!";
-            return RedirectToAction("Index");
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }

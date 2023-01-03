@@ -2,12 +2,10 @@
 
 namespace RestaurentMS_Final_Project.Models
 {
-    public class Order : TimeStampClass
+    public class Order 
     {
         [Key]
         public int Id { get; set; }
-
-        public int MenuCategoryId { get; set; }
 
         public int MenuItemId { get; set; }
 

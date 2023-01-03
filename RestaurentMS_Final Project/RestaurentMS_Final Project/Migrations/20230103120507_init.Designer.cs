@@ -9,21 +9,20 @@ using RestaurentMS_Final_Project.Data;
 
 #nullable disable
 
-namespace RestaurentMSFinalProject.Migrations
+namespace RestaurentMS_Final_Project.Migrations
 {
     [DbContext(typeof(RestaurentMSDbContext))]
-    [Migration("20221228093348_third")]
-    partial class third
+    [Migration("20230103120507_init")]
+    partial class init
     {
-        /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.1")
+                .HasAnnotation("ProductVersion", "6.0.9")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("MenuItemOrder", b =>
                 {
@@ -73,7 +72,7 @@ namespace RestaurentMSFinalProject.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
@@ -98,7 +97,7 @@ namespace RestaurentMSFinalProject.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
@@ -248,19 +247,22 @@ namespace RestaurentMSFinalProject.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("MenuCategoryDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MenuCategoryName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
+                    b.Property<int?>("MenuItemId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MenuItemId");
 
                     b.ToTable("menuCategories");
                 });
@@ -271,14 +273,7 @@ namespace RestaurentMSFinalProject.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("MenuImage")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("MenuItemName")
                         .IsRequired()
@@ -287,15 +282,10 @@ namespace RestaurentMSFinalProject.Migrations
                     b.Property<double>("MenuItemPrice")
                         .HasColumnType("float");
 
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
                     b.Property<int>("menuCategoryId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("menuCategoryId");
 
                     b.ToTable("menuItems");
                 });
@@ -306,10 +296,7 @@ namespace RestaurentMSFinalProject.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("datetime2");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("MenuCategoryId")
                         .HasColumnType("int");
@@ -319,9 +306,6 @@ namespace RestaurentMSFinalProject.Migrations
 
                     b.Property<int>("PaymentId")
                         .HasColumnType("int");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -336,7 +320,7 @@ namespace RestaurentMSFinalProject.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("PaymentTypeName")
                         .IsRequired()
@@ -353,10 +337,7 @@ namespace RestaurentMSFinalProject.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("datetime2");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("CustomerEmail")
                         .IsRequired()
@@ -376,9 +357,6 @@ namespace RestaurentMSFinalProject.Migrations
 
                     b.Property<int>("NumberOfPersons")
                         .HasColumnType("int");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -451,15 +429,11 @@ namespace RestaurentMSFinalProject.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("RestaurentMS_Final_Project.Models.MenuItem", b =>
+            modelBuilder.Entity("RestaurentMS_Final_Project.Models.MenuCategory", b =>
                 {
-                    b.HasOne("RestaurentMS_Final_Project.Models.MenuCategory", "menuCategory")
-                        .WithMany()
-                        .HasForeignKey("menuCategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("menuCategory");
+                    b.HasOne("RestaurentMS_Final_Project.Models.MenuItem", null)
+                        .WithMany("menuCategory")
+                        .HasForeignKey("MenuItemId");
                 });
 
             modelBuilder.Entity("RestaurentMS_Final_Project.Models.Order", b =>
@@ -471,6 +445,11 @@ namespace RestaurentMSFinalProject.Migrations
                         .IsRequired();
 
                     b.Navigation("payment");
+                });
+
+            modelBuilder.Entity("RestaurentMS_Final_Project.Models.MenuItem", b =>
+                {
+                    b.Navigation("menuCategory");
                 });
 #pragma warning restore 612, 618
         }

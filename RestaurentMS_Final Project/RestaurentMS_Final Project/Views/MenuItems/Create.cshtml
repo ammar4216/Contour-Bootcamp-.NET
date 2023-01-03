@@ -1,0 +1,49 @@
+﻿@model MenuItemViewModel
+
+
+<div class="container shadow p-5">
+    <div class="row pb-2">
+        <h2>Add New Menu Category</h2>
+    </div>
+
+    <form method="post" asp-action="Create">
+        <div asp-validation-summary="All"></div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="MenuItemName">Item Name</label>
+                <input type="text" class="form-control mb-3" asp-for="MenuItemName" placeholder="Enter category name...">
+                <span asp-validation-for="MenuItemName" class=" alert-danger"></span>
+            </div> 
+        </div>
+
+        <div class="form-row">
+           <div class="form-group col-md-6">
+                <label asp-for="MenuItemPrice">Price</label>
+                <input type="text" class="form-control mb-3" asp-for="MenuItemPrice" placeholder="Enter description">
+                <span asp-validation-for="MenuItemPrice" class=" alert-danger"></span>
+            </div>
+        </div>
+         <div class="form-group">
+        <label asp-for="menuCategoryId" class="col-md-2"></label>
+        <div class="col-md-10">
+            <select asp-for="menuCategoryId" asp-items="@Model.menu" class="form-control">
+                <option disabled selected>--Select Menu--</option>
+            </select>
+        </div>
+        </div>
+
+        <button type="submit" class="btn btn-lg btn-primary p-2"><i class="bi bi-file-plus-fill"></i>Save</button>
+        <a asp-controller="MenuLists" asp-action="Index" class="btn btn-lg btn-warning p-2">Back To List</a>
+    </form>
+
+</div>
+
+
+@*//for front end validations*@
+
+@section Scripts{
+    @{
+    <partial name="_ValidationScriptsPartial" />
+    }
+}

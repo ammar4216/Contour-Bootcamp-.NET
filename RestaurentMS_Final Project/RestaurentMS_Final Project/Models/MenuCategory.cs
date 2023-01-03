@@ -2,7 +2,7 @@
 
 namespace RestaurentMS_Final_Project.Models
 {
-    public class MenuCategory : TimeStampClass
+    public class MenuCategory 
     {
         [Key]
         public int Id { get; set; }

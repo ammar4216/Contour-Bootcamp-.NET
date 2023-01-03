@@ -2,7 +2,7 @@
 
 namespace RestaurentMS_Final_Project.Models
 {
-    public class Reservation : TimeStampClass
+    public class Reservation 
     {
         [Key]
         public int Id { get; set; }

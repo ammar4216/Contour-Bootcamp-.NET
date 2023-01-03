@@ -1,0 +1,116 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RestaurentMS_Final_Project
+build_property.RootNamespace = RestaurentMS_Final_Project
+build_property.ProjectDir = C:\Users\ahmedamma\Documents\Contour-Bootcamp-.NET\RestaurentMS_Final Project\RestaurentMS_Final Project\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\ahmedamma\Documents\Contour-Bootcamp-.NET\RestaurentMS_Final Project\RestaurentMS_Final Project
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/Account/ForgotPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/Account/ResetPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/MenuCategory/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUNhdGVnb3J5XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/MenuCategory/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUNhdGVnb3J5XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/MenuCategory/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUNhdGVnb3J5XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/MenuCategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUNhdGVnb3J5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/MenuItems/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUl0ZW1zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/MenuItems/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUl0ZW1zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/PaymentType/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFR5cGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/PaymentType/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFR5cGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/PaymentType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFR5cGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/User/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmedamma/Documents/Contour-Bootcamp-.NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-eoieajzkt8

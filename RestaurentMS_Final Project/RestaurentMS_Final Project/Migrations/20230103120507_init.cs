@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace RestaurentMS_Final_Project.Migrations
 {
-    public partial class first : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -22,8 +22,6 @@ namespace RestaurentMS_Final_Project.Migrations
                 {
                     table.PrimaryKey("PK_AspNetRoles", x => x.Id);
                 });
-
-            
 
             migrationBuilder.CreateTable(
                 name: "AspNetUsers",
@@ -52,18 +50,18 @@ namespace RestaurentMS_Final_Project.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "menuCategories",
+                name: "menuItems",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    MenuCategoryName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    MenuItemName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MenuItemPrice = table.Column<double>(type: "float", nullable: false),
+                    menuCategoryId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_menuCategories", x => x.Id);
+                    table.PrimaryKey("PK_menuItems", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -89,9 +87,7 @@ namespace RestaurentMS_Final_Project.Migrations
                     CustomerEmail = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CustomerPhone = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EventName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    NumberOfPersons = table.Column<int>(type: "int", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    NumberOfPersons = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -205,26 +201,23 @@ namespace RestaurentMS_Final_Project.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "menuItems",
+                name: "menuCategories",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    MenuItemName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MenuItemPrice = table.Column<double>(type: "float", nullable: false),
-                    menuCategoryId = table.Column<int>(type: "int", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    MenuCategoryName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MenuCategoryDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MenuItemId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_menuItems", x => x.Id);
+                    table.PrimaryKey("PK_menuCategories", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_menuItems_menuCategories_menuCategoryId",
-                        column: x => x.menuCategoryId,
-                        principalTable: "menuCategories",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        name: "FK_menuCategories_menuItems_MenuItemId",
+                        column: x => x.MenuItemId,
+                        principalTable: "menuItems",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -235,9 +228,7 @@ namespace RestaurentMS_Final_Project.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     MenuCategoryId = table.Column<int>(type: "int", nullable: false),
                     MenuItemId = table.Column<int>(type: "int", nullable: false),
-                    PaymentId = table.Column<int>(type: "int", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    PaymentId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -314,14 +305,14 @@ namespace RestaurentMS_Final_Project.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_menuCategories_MenuItemId",
+                table: "menuCategories",
+                column: "MenuItemId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_MenuItemOrder_ordersId",
                 table: "MenuItemOrder",
                 column: "ordersId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_menuItems_menuCategoryId",
-                table: "menuItems",
-                column: "menuCategoryId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_orders_PaymentId",
@@ -347,6 +338,9 @@ namespace RestaurentMS_Final_Project.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "menuCategories");
+
+            migrationBuilder.DropTable(
                 name: "MenuItemOrder");
 
             migrationBuilder.DropTable(
@@ -363,9 +357,6 @@ namespace RestaurentMS_Final_Project.Migrations
 
             migrationBuilder.DropTable(
                 name: "orders");
-
-            migrationBuilder.DropTable(
-                name: "menuCategories");
 
             migrationBuilder.DropTable(
                 name: "paymentTypes");

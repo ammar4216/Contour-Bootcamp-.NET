@@ -1,9 +1,10 @@
 ﻿
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
 
 namespace RestaurentMS_Final_Project.Models
 {
-    public class MenuItem : TimeStampClass
+    public class MenuItem 
     {
         [Key]
         public int Id { get; set; }
@@ -14,13 +15,10 @@ namespace RestaurentMS_Final_Project.Models
         [Required]
         public double MenuItemPrice { get; set; }
 
-        [Required]
-        [Display(Name = "Menu Image")]
-        public string MenuImage { get; set; }
-
         public int menuCategoryId { get; set; }
-        public MenuCategory menuCategory { get; set; }
+        public IList<MenuCategory> menuCategory { get; set; }
 
         public IList<Order> orders { get; set; }    
+        
     }
 }

@@ -1,16 +1,140 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RestaurentMS_Final Project.bundle.scp.css",
-      "PackagePath": "staticwebassets\\RestaurentMS_Final Project.bundle.scp.css"
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RestaurentMS_Final_Project.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RestaurentMS_Final_Project.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\css\\responsive-style.css",
+      "PackagePath": "staticwebassets\\css\\responsive-style.css"
     },
     {
       "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\About\\about1.png",
+      "PackagePath": "staticwebassets\\images\\About\\about1.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\About\\about2.png",
+      "PackagePath": "staticwebassets\\images\\About\\about2.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\banner2.png",
+      "PackagePath": "staticwebassets\\images\\banner2.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\food.png",
+      "PackagePath": "staticwebassets\\images\\food.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\fork.png",
+      "PackagePath": "staticwebassets\\images\\fork.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\gallery\\big.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\big.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\gallery\\food.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\food.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\gallery\\food2.png",
+      "PackagePath": "staticwebassets\\images\\gallery\\food2.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\gallery\\food3.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\food3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\gallery\\tandoor.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\tandoor.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\gallery\\vert3.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery\\vert3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\health-tips.jpg",
+      "PackagePath": "staticwebassets\\images\\health-tips.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\icons\\apple.png",
+      "PackagePath": "staticwebassets\\images\\icons\\apple.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\icons\\water.png",
+      "PackagePath": "staticwebassets\\images\\icons\\water.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\menu\\cajun-chicken2.png",
+      "PackagePath": "staticwebassets\\images\\menu\\cajun-chicken2.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\menu\\chicken-kiev2.png",
+      "PackagePath": "staticwebassets\\images\\menu\\chicken-kiev2.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\menu\\chicken-tikka2.png",
+      "PackagePath": "staticwebassets\\images\\menu\\chicken-tikka2.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\menu\\grilled-chicken2.png",
+      "PackagePath": "staticwebassets\\images\\menu\\grilled-chicken2.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\menu\\lemon-chicken2.png",
+      "PackagePath": "staticwebassets\\images\\menu\\lemon-chicken2.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\menu\\tandoori2.png",
+      "PackagePath": "staticwebassets\\images\\menu\\tandoori2.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\phone-website.png",
+      "PackagePath": "staticwebassets\\images\\phone-website.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\reviwers\\review-3.jpeg",
+      "PackagePath": "staticwebassets\\images\\reviwers\\review-3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\reviwers\\review2.jpg",
+      "PackagePath": "staticwebassets\\images\\reviwers\\review2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\reviwers\\review4.jpg",
+      "PackagePath": "staticwebassets\\images\\reviwers\\review4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\reviwers\\reviwe1.png",
+      "PackagePath": "staticwebassets\\images\\reviwers\\reviwe1.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\webdemo.jpg",
+      "PackagePath": "staticwebassets\\images\\webdemo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\website.png",
+      "PackagePath": "staticwebassets\\images\\website.png"
+    },
+    {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
       "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\js\\site.js",
@@ -245,20 +369,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.RestaurentMS_Final Project.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.RestaurentMS_Final_Project.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.RestaurentMS_Final Project.props",
-      "PackagePath": "build\\RestaurentMS_Final Project.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.RestaurentMS_Final_Project.props",
+      "PackagePath": "build\\RestaurentMS_Final_Project.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.RestaurentMS_Final Project.props",
-      "PackagePath": "buildMultiTargeting\\RestaurentMS_Final Project.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.RestaurentMS_Final_Project.props",
+      "PackagePath": "buildMultiTargeting\\RestaurentMS_Final_Project.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.RestaurentMS_Final Project.props",
-      "PackagePath": "buildTransitive\\RestaurentMS_Final Project.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.RestaurentMS_Final_Project.props",
+      "PackagePath": "buildTransitive\\RestaurentMS_Final_Project.props"
     }
   ],
   "ElementsToRemove": []

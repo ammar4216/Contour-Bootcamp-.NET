@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\RestaurentMS_Final_Project.props" />
+</Project>

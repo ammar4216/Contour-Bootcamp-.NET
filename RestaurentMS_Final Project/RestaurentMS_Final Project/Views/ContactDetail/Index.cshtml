@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ContactDetail>
+
+
+
+<div class="container shadow p-5">
+
+    <h1 class="text-center mb-3">Menu Categories</h1>
+
+    <div class="col mb-3">
+        <a asp-controller="MenuCategory" asp-action="Create" class="btn btn-lg btn-primary"><i class="bi bi-file-plus-fill"></i>Add Category</a>
+    </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Category Name</th>
+                <th scope="col">Description</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td width="20%">
+                        @item.ContactName
+                    </td>
+                    <td width="20%">
+                        @item.ContactEmail
+                    </td>
+                     <td width="50%">
+                        @item.Message
+                    </td>
+                    <td>
+                        <div role="group" class="w-10 btn-group">
+                            <a asp-controller="ContactDetail" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger"><i class="bi bi-trash-fill"></i>Delete</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

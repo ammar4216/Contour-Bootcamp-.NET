@@ -10,7 +10,7 @@ namespace RestaurentMS_Final_Project.ViewModels
         public string MenuItemName { get; set; }
 
         [Required]
-        public double MenuItemPrice { get; set; }
+        public decimal MenuItemPrice { get; set; }
 
         public int menuCategoryId { get; set; }
         public IList<SelectListItem>? menu { get; set; }

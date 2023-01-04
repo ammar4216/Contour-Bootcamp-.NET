@@ -50,6 +50,23 @@ namespace RestaurentMS_Final_Project.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "contactDetails",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ContactName = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    ContactEmail = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Message = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_contactDetails", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "menuItems",
                 columns: table => new
                 {
@@ -226,7 +243,6 @@ namespace RestaurentMS_Final_Project.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    MenuCategoryId = table.Column<int>(type: "int", nullable: false),
                     MenuItemId = table.Column<int>(type: "int", nullable: false),
                     PaymentId = table.Column<int>(type: "int", nullable: false)
                 },
@@ -336,6 +352,9 @@ namespace RestaurentMS_Final_Project.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "contactDetails");
 
             migrationBuilder.DropTable(
                 name: "menuCategories");

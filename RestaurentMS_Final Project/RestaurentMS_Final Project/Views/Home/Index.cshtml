@@ -2,6 +2,8 @@
     ViewData["Title"] = "Home Page";
 }
 
+@model ContactDetail
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,7 +83,6 @@
                 </div>
             </section>
 
-            <hr />
             <!-- menu section -->
             <!-- Offer Section -->
             <section id="menu" class="offers_wrapper">
@@ -153,8 +154,7 @@
                     </div>
                 </div>
             </section>
-            <hr />
-            <br />
+
             <!-- Section-5 testimonial-->
             <section id="review">
                 <div class="wrapper testimonial-section">
@@ -206,13 +206,9 @@
                 </div>
             </section>
 
-
-            <br />
-            <hr />
-
             <!-- section-7 Gallery-->
             <!-- Gallery -->
-            <br><br>
+
             <section id="gallery">
                 <div class="text-center pb-4">
                     <h1>Follow Us</h1>
@@ -263,8 +259,55 @@
                     </div>
                 </div>
             </section>
-            <hr />
-            <!-- section-8 newslettar-->
+
+             <!-- section-8 Contact Form-->
+             <section id="contactForm">
+                 <div class="wrapper">
+                      <div class="text-center pb-4">
+                          <h1>Contact Us</h1>
+                      </div>
+                     <br />
+                     <div class="contactDiv">
+                         <form asp-action="Create" asp-controller="ContactDetail" class="contact100-form validate-form" method="post">
+                   
+                             <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label asp-for="ContactName">Name:</label>
+                                    <input type="text" class="form-control mb-3" asp-for="ContactName" placeholder="Enter your name">
+                                    <span asp-validation-for="ContactName" class=" alert-danger"></span>
+                                </div> 
+                            </div>
+
+                             <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label asp-for="ContactEmail">Email:</label>
+                                    <input type="text" class="form-control mb-3" asp-for="ContactEmail" placeholder="Enter your email">
+                                    <span asp-validation-for="ContactEmail" class=" alert-danger"></span>
+                                </div> 
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label asp-for="Message">Message:</label>
+                                    <textarea type="text" class="form-control mb-3" asp-for="Message" placeholder="Enter your message here.." style="resize:none;" rows="5" cols="50"></textarea>
+                                    <span asp-validation-for="Message" class=" alert-danger"></span>
+                                </div> 
+                            </div>
+
+                             <button type="submit" class="orange-btn">
+                                    Submit
+                              </button>
+                              <br /><br />
+                               <div>
+                                    For any question contact our 24/7 call center: +001 345 6889
+                                </div>
+                        </form>
+                        <img src="@Url.Content("~/images/contact.png")" />
+                    </div>
+                 </div>
+            </section>
+
+            <!-- section-9 newslettar-->
             <section id="contact">
                 <div class="newslettar wrapper">
                     <div class="container">

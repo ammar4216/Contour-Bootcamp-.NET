@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RestaurentMS_Final_Project.Data;
 
@@ -11,9 +12,10 @@ using RestaurentMS_Final_Project.Data;
 namespace RestaurentMS_Final_Project.Migrations
 {
     [DbContext(typeof(RestaurentMSDbContext))]
-    partial class RestaurentMSDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230104065737_second")]
+    partial class second
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -305,8 +307,8 @@ namespace RestaurentMS_Final_Project.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("MenuItemPrice")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<double>("MenuItemPrice")
+                        .HasColumnType("float");
 
                     b.Property<int>("menuCategoryId")
                         .HasColumnType("int");

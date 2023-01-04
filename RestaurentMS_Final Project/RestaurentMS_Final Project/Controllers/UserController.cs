@@ -100,6 +100,7 @@ namespace RestaurentMS_Final_Project.Controllers
 
         // Delete User
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Delete(string userId)
         {
             var user = _context.AppUser.FirstOrDefault(u => u.Id == userId);

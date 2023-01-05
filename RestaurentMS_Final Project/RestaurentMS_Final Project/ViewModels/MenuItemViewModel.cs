@@ -6,14 +6,16 @@ namespace RestaurentMS_Final_Project.ViewModels
 {
     public class MenuItemViewModel 
     {
-        [Required]
+        [Required(ErrorMessage = "Please Enter Menu Item Name")]
         public string MenuItemName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Please Enter Menu Item Price")]
         public decimal MenuItemPrice { get; set; }
 
         public int menuCategoryId { get; set; }
-        public IList<SelectListItem>? menu { get; set; }
+
+        [Required(ErrorMessage = "Please Select Menu Category")]
+        public IList<SelectListItem> menu { get; set; }
 
     }
 }

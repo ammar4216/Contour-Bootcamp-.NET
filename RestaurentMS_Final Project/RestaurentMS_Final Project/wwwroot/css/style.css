@@ -1,16 +1,4 @@
-/* TABLE OF CONTENTS */
-/* ------------------
-1. General
-2. Navbar
-3. Banner and counter
-4. About
-5. Menu
-6. Reviews
-7. Health tips
-8. Gallery
-9. Footer
--------------------- */
-
+﻿
 /* 1 General */
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
@@ -56,6 +44,7 @@
 body {
     font-family: var(--secondary-font);
     background-color: var(--bg-white);
+    overflow-x:hidden;
 }
 
 a {
@@ -476,8 +465,6 @@ p {
     margin:0 auto;
   }
   .newsletter .form-control{
-    height:3.225rem;
-    padding:0 1.25rem;
     font-size: 0.875rem; 
     width:100%;
     border:none;
@@ -487,6 +474,14 @@ p {
     color:var(--black-color);
     font-weight: 700;
   }
+    .newsletter input {
+        height: 3.225rem;
+        padding: 0 1.25rem;
+    }
+
+    .newsletter textarea {
+        padding: 1rem;
+    }
   .newsletter .form-control:hover,
   .newsletter .form-control:focus{
     outline:none;
@@ -580,3 +575,5 @@ p {
 }
 
 
+
+​

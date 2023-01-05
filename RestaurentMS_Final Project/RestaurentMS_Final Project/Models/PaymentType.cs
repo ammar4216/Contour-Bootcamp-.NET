@@ -7,7 +7,7 @@ namespace RestaurentMS_Final_Project.Models
         [Key]
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Please Enter Payment Type Name")]
         public string PaymentTypeName { get; set; }
     }
 }

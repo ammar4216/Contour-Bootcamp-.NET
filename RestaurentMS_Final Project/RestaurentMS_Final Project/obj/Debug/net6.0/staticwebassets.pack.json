@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\images\\banner2.png"
     },
     {
+      "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\contact.png",
+      "PackagePath": "staticwebassets\\images\\contact.png"
+    },
+    {
       "Id": "C:\\Users\\KKT\\Documents\\Contour Bootcamp .NET\\RestaurentMS_Final Project\\RestaurentMS_Final Project\\wwwroot\\images\\food.png",
       "PackagePath": "staticwebassets\\images\\food.png"
     },

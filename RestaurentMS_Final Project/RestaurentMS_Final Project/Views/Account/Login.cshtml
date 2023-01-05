@@ -3,8 +3,6 @@
 
 @using RestaurentMS_Final_Project.ViewModels;
 @model LoginViewModel
-<br /><br />
-<br />
 <br />
 <br />
 <br />
@@ -21,7 +19,6 @@
                     <span asp-validation-for="UserName" class="text-danger"></span>
                 </div>
             </div>
-            <br />
             <div class="form-group">
                 <label asp-for="Password" class="col-md-2"></label>
                 <div class="col-md-10">
@@ -39,15 +36,20 @@
                     </div>
                 </div>
             </div>
-            <br />
-            <div class="form-group">
-                <div class="col-md-2">
-                    <button type="submit" class="btn btn-success form-control">Log in</button>
-                </div>
-            </div>
+
+
+   
+                <button type="submit" class="orange-btn m-3">Log in</button>
+
             
             <p>
-                <a asp-action="ForgotPassword" style="color: #F23E19;"> Forgot your passowrd?</a>
+                <a asp-action="ForgotPassword" style="color: #F23E19;" class="m-3" > Forgot your passowrd?</a>
             </p>
         </form>
     </div>
+
+    @section Scripts{
+        @{
+            <partial name="_ValidationScriptsPartial" />
+        }
+    }

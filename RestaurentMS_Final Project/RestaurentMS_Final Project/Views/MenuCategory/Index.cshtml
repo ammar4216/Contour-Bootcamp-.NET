@@ -4,21 +4,15 @@
     ViewData["Title"] = "Index";
 }
 
-@if (TempData["ResultOk"] != null)
-{
-    <h1 class="alert-success">@TempData["ResultOk"]</h1>
-}
-else
-{
-     <h1 class="alert-warning">@TempData["ResultNotOk"]</h1>
-}
-
+<br />
+<br />
+<br />
 <div class="container shadow p-5">
 
-    <h1 class="text-center mb-3">Menu Categories</h1>
+    <h2 style="color: black" >Menu Categories</h2>
 
-    <div class="col mb-3">
-        <a asp-controller="MenuCategory" asp-action="Create" class="btn btn-lg btn-primary"><i class="bi bi-file-plus-fill"></i>Add Category</a>
+    <div class="mb-2">
+        <a asp-controller="MenuCategory" asp-action="Create" class="btn btn-md btn-primary"><i class="bi bi-file-plus-fill"></i>Add Category</a>
     </div>
     <table class="table table-bordered table-hover">
         <thead>

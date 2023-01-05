@@ -5,11 +5,11 @@ namespace RestaurentMS_Final_Project.ViewModels
 {
     public class ResetPasswordViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "Email Address is Required")]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Password is Required")]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password { get; set; }

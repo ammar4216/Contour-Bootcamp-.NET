@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using RestaurentMS_Final_Project.Data;
 using RestaurentMS_Final_Project.Models;
@@ -23,7 +24,7 @@ namespace RestaurentMS_Final_Project.Controllers
             return View();
         }
 
-        //Contact Form
+        [Authorize(Roles = "Admin,Employee")]
         public IActionResult ContactIndex()
         {
             IEnumerable<ContactDetail> contactDetails = _context.contactDetails;
@@ -52,6 +53,7 @@ namespace RestaurentMS_Final_Project.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public IActionResult ContactDelete(int? id)
         {
             var user = _context.contactDetails.FirstOrDefault(u => u.Id == id);
@@ -65,6 +67,7 @@ namespace RestaurentMS_Final_Project.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = "Admin")]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

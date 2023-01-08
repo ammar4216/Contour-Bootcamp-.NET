@@ -1,22 +1,31 @@
-﻿@model IEnumerable<ContactDetail>
+﻿@using RestaurentMS_Final_Project.Models
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
+@model IEnumerable<ContactDetail>
 
 
+<br />
+<br />
+<br />
 
-<div class="container shadow p-5">
+<div class="p-4 border rounded">
 
-    <h1 class="text-center mb-3">Customer Messages</h1>
+    <h2 style="color: black">Customer Messages</h2>
 
     
-    <table class="table table-bordered table-hover">
-        <thead>
+    <table class="table table-striped border">
+
             <tr>
                 <th scope="col">Customer Name</th>
                 <th scope="col">Customer Email</th>
                 <th scope="col">Customer Message</th>
                 <th></th>
             </tr>
-        </thead>
-        <tbody>
+
+
 
             @foreach (var item in Model)
             {
@@ -31,12 +40,16 @@
                         @item.Message
                     </td>
                     <td>
+                    @if (User.IsInRole("Admin"))
+                    {
                         <div role="group" class="w-10 btn-group">
                             <a asp-controller="Home" asp-action="ContactDelete" asp-route-id="@item.Id" class="btn btn-sm btn-danger"><i class="bi bi-trash-fill"></i>Delete</a>
                         </div>
+                    }
+                    
                     </td>
                 </tr>
             }
-        </tbody>
+
     </table>
 </div>

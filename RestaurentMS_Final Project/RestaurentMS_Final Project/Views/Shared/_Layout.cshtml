@@ -50,22 +50,38 @@
                         @if (SignInManager.IsSignedIn(User))
                         {
                            
-                            @if (User.IsInRole("Admin"))
+                            @if (User.IsInRole("Employee") || User.IsInRole("Admin"))
                             {
                                 <li class="nav-item">
                                     <a asp-controller="Home" asp-action="Index" class="nav-link">Home</a>
                                 </li>
                                 // User Dropdown
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <li class="nav-item dropdown" id="nav">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            User
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" asp-controller="User" asp-action="Index">User List</a>
+                                            <a class="dropdown-item" asp-controller="Account" asp-action="Register">Add New User</a>
+                                        </div>
+                                    </li>
+                                }
+
+                                // Order Dropdown
                                 <li class="nav-item dropdown" id="nav">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        User
+                                        Orders
                                     </a>
 
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" asp-controller="User" asp-action="Index">User List</a>
-                                        <a class="dropdown-item" asp-controller="Account" asp-action="Register">Add New User</a>
+                                        <a class="dropdown-item" asp-controller="Order" asp-action="Create">Add New Order</a>
+                                        <a class="dropdown-item" asp-controller="Order" asp-action="Index">Orders List</a>
                                     </div>
                                 </li>
+
                                 // Menu Category List
                                 <li class="nav-item dropdown" id="nav">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -74,7 +90,9 @@
                                     
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" asp-controller="MenuCategory" asp-action="Index">Categories List</a>
-                                        <a class="dropdown-item" asp-controller="MenuCategory" asp-action="Create">Add New Category</a>
+                                        @if (User.IsInRole("Admin")){
+                                            <a class="dropdown-item" asp-controller="MenuCategory" asp-action="Create">Add New Category</a>
+                                        }
                                     </div>
                                 </li>
 
@@ -86,7 +104,10 @@
 
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" asp-controller="MenuItems" asp-action="Index">Menu Item List</a>
-                                        <a class="dropdown-item" asp-controller="MenuItems" asp-action="Create">Add New Item</a>
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            <a class="dropdown-item" asp-controller="MenuItems" asp-action="Create">Add New Item</a>
+                                        }
                                     </div>
                                 </li>
 
@@ -97,14 +118,23 @@
                                     </a>
 
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" asp-controller="PaymentType" asp-action="Index">Menu Item List</a>
-                                        <a class="dropdown-item" asp-controller="PaymentType" asp-action="Create">Add New Item</a>
+                                        <a class="dropdown-item" asp-controller="PaymentType" asp-action="Index">Payment Type List</a>
+                                        @if (User.IsInRole("Admin"))
+                                        {
+                                            <a class="dropdown-item" asp-controller="PaymentType" asp-action="Create">Add New Type</a>
+                                        } 
                                     </div>
                                 </li>
+
+                                //Contact Messages
+                                <li class="nav-item">
+                                    <a asp-controller="Home" asp-action="ContactIndex" class="nav-link">Contact</a>
+                                </li>
+                               
                             }
-                            <li class="nav-item">
+                           @* <li class="nav-item">
                                 <a class="nav-link" href="#">Hello @UserManager.GetUserName(User)</a>
-                            </li>
+                            </li>*@
                             <li class="nav-item">
                                 <form id="logoutForm" method="post" class="form-inline" asp-controller="Account"
                                   asp-action="Logout">

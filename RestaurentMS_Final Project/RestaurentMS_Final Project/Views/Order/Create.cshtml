@@ -204,15 +204,15 @@
             var objOrderViewModel = {};
             var ListOrderDetailViewModel = new Array();
             objOrderViewModel.PaymentTypeId = $("#PaymentType").val();
-            objOrderViewModel.CustomerId = $("#txtCustomerName").val();
+            objOrderViewModel.CustomerName = $("#txtCustomerName").val();
             objOrderViewModel.FinalTotal = $("#txtFinalTotal").val();
             $("#tblRestaurantItemList").find("tr:gt(0)").each(function () {
                 var objOrderDetailViewModel = {};
-                objOrderDetailViewModel.ItemId = $(this).find("td:eq(0)").text();
+                objOrderDetailViewModel.MenuItemId = +$(this).find("td:eq(0)").text().trim();
                 objOrderDetailViewModel.Quantity = $(this).find("td:eq(3)").text();
                 objOrderDetailViewModel.Total = $(this).find("td:eq(5)").text();
                 objOrderDetailViewModel.Discount = $(this).find("td:eq(4)").text();
-                objOrderDetailViewModel.UnitPrice = $(this).find("td:eq(2)").text();
+                objOrderDetailViewModel.ItemPrice = +$(this).find("td:eq(2)").text().trim();
                 ListOrderDetailViewModel.push(objOrderDetailViewModel);
             });
             objOrderViewModel.listOrderDetailViewModel = ListOrderDetailViewModel;
@@ -223,7 +223,7 @@
                 contentType: 'application/json; charset=utf-8',
                 data: JSON.stringify(objOrderViewModel),
                 url: '@Url.Action("Create", "Order")',
-                success: function (response) { alert(response.data) },
+                success: function (data) { alert(data) },
                 error: function () { alert('There is some problem to get the unit price.') }
             });
             ResetItems();

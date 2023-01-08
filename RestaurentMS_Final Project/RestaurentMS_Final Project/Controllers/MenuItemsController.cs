@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using RestaurentMS_Final_Project.Data;
 using RestaurentMS_Final_Project.Models;
 using RestaurentMS_Final_Project.ViewModels;
+using System.Data;
 
 namespace RestaurentMS_Final_Project.Controllers
 {
@@ -14,6 +16,8 @@ namespace RestaurentMS_Final_Project.Controllers
         {
             _context = context;
         }
+
+        [Authorize(Roles = "Admin,Employee")]
         public IActionResult Index()
         {
             
@@ -21,6 +25,7 @@ namespace RestaurentMS_Final_Project.Controllers
             return View(menuItems);
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             var data = _context.menuCategories.ToList();
@@ -40,6 +45,7 @@ namespace RestaurentMS_Final_Project.Controllers
             return View(MyMenuItem);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(MenuItemViewModel menuItemViewModel)
@@ -87,6 +93,18 @@ namespace RestaurentMS_Final_Project.Controllers
         //    return View();
         //}
 
+        [Authorize(Roles = "Admin")]
+        public IActionResult Delete(int? Id)
+        {
+            var menu = _context.menuItems.FirstOrDefault(u => u.Id == Id);
+            if (menu == null)
+            {
+                return NotFound();
+            }
+            _context.menuItems.Remove(menu);
+            _context.SaveChanges();
 
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

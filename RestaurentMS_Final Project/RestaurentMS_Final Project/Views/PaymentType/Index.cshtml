@@ -1,25 +1,37 @@
-﻿@model IEnumerable<PaymentType>
+﻿@using RestaurentMS_Final_Project.Models
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
+@model IEnumerable<PaymentType>
 
     @{
     ViewData["Title"] = "Index";
 }
 
+<br />
+<br />
+<br />
+<div class="p-4 border rounded">
 
-<div class="container shadow p-5">
+    <h2 style="color: black">Payment Types</h2>
 
-    <h1 class="text-center mb-3">Payment Types</h1>
-
-    <div class="col mb-3">
-        <a asp-controller="PaymentType" asp-action="Create" class="btn btn-lg btn-primary"><i class="bi bi-file-plus-fill"></i>Add New Type</a>
+    @if (User.IsInRole("Admin"))
+    {
+       <div class="mb-2">
+        <a asp-controller="PaymentType" asp-action="Create" class="btn btn-md btn-primary"><i class="bi bi-file-plus-fill"></i>Add New Type</a>
     </div>
-    <table class="table table-bordered table-hover">
-        <thead>
+    }
+    
+    <table class ="table table-striped border">
+
             <tr>
                 <th scope="col">Category Name</th>
                 <th></th>
             </tr>
-        </thead>
-        <tbody>
+
+
 
             @foreach (var item in Model)
             {
@@ -29,12 +41,15 @@
                     </td>
                    
                     <td>
+                    @if (User.IsInRole("Admin"))
+                    {
                         <div role="group" class="w-10 btn-group">
                             <a asp-controller="PaymentType" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-md btn-danger"><i class="bi bi-trash-fill"></i>Delete</a>
                         </div>
-                    </td>
+                    }
+                </td>
                 </tr>
             }
-        </tbody>
+
     </table>
 </div>

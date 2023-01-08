@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using RestaurentMS_Final_Project.Data;
@@ -7,6 +8,7 @@ using RestaurentMS_Final_Project.ViewModels;
 
 namespace RestaurentMS_Final_Project.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class UserController : Controller
     {
         private readonly RestaurentMSDbContext _context;

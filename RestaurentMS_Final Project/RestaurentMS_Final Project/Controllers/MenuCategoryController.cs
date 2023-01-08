@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using RestaurentMS_Final_Project.Data;
 using RestaurentMS_Final_Project.Models;
 
@@ -13,19 +14,20 @@ namespace RestaurentMS_Final_Project.Controllers
             _context = context;
         }
 
-        // Read Menu Categories
+        [Authorize(Roles = "Admin,Employee")]
         public IActionResult Index()
         {
             IEnumerable<MenuCategory> menuObj = _context.menuCategories;
             return View(menuObj);
         }
 
-        //Create Menu Category
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(MenuCategory menuObj)
@@ -51,7 +53,7 @@ namespace RestaurentMS_Final_Project.Controllers
         }
 
 
-        // Edit Menu Categories
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(int? id)
         {
             if(id == null || id == 0)
@@ -67,6 +69,7 @@ namespace RestaurentMS_Final_Project.Controllers
             return View(updateMenuCategory);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(MenuCategory menu)
@@ -81,6 +84,7 @@ namespace RestaurentMS_Final_Project.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(int? id)
         {
             if (id == null || id == 0)
@@ -96,6 +100,7 @@ namespace RestaurentMS_Final_Project.Controllers
             return View(deleteMenuCategory);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteMenuCategory(int? id)

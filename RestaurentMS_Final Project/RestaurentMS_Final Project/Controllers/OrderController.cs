@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using RestaurentMS_Final_Project.Data;
 using RestaurentMS_Final_Project.Interfaces;
+using RestaurentMS_Final_Project.Models;
 using RestaurentMS_Final_Project.ViewModels;
 
 namespace RestaurentMS_Final_Project.Controllers
@@ -20,38 +22,16 @@ namespace RestaurentMS_Final_Project.Controllers
             _menu = menu;
             _orderService = orderService;
         }
+
+        [Authorize(Roles = "Admin,Employee")]
         public IActionResult Index()
         {
-
-            //var menuItems = _context.menuItems.ToList();
-
-            //var payments = _context.paymentTypes.ToList();
-
-
-            //OrderViewModel orders = new OrderViewModel()
-            //{
-            //    MenuItems = menuItems,
-            //    payment = new List<SelectListItem>()
-            //};
-
-            //foreach (var item in payments)
-            //{
-            //    orders.payment.Add(new SelectListItem()
-            //    {
-            //        Value = item.Id.ToString(),
-            //        Text = item.PaymentTypeName
-            //    }
-            //    );
-
-            //}
-
-            //return View(orders);
-
-            return View();
+            IEnumerable<Order> orders = _context.orders;
+            return View(orders);
         }
 
 
-
+        [Authorize(Roles = "Admin,Employee")]
         public IActionResult Create() {
 
             var objMultipleModels = new Tuple<IEnumerable<SelectListItem>, IEnumerable<SelectListItem>>
@@ -69,7 +49,8 @@ namespace RestaurentMS_Final_Project.Controllers
 
 
         [HttpPost]
-        public JsonResult Create(OrderViewModel orderViewModel)
+        [Authorize(Roles = "Admin,Employee")]
+        public JsonResult Create([FromBody] OrderViewModel orderViewModel)
         {
 
             bool isStatus = _orderService.AddOrder(orderViewModel);
@@ -85,6 +66,20 @@ namespace RestaurentMS_Final_Project.Controllers
             }
 
             return Json(SuccessMessage);
+        }
+
+        [Authorize(Roles = "Admin")]
+        public IActionResult Delete(int? Id)
+        {
+            var order = _context.orders.FirstOrDefault(u => u.Id == Id);
+            if (order == null)
+            {
+                return NotFound();
+            }
+            _context.orders.Remove(order);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
         }
 
     }

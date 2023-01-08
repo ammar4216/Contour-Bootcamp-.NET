@@ -29,16 +29,10 @@ namespace RestaurentMS_Final_Project.Controllers
             _roleManager = roleManager;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-
 
         // Create New User
         [HttpGet]
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Register(string? returnUrl = null)
         {
             if(!await _roleManager.RoleExistsAsync("Admin"))
@@ -66,6 +60,7 @@ namespace RestaurentMS_Final_Project.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Register(RegisterViewModel registerViewModel, string? returnUrl = null)
         {
             registerViewModel.returnUrl=returnUrl;

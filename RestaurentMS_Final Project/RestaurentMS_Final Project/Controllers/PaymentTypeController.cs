@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using RestaurentMS_Final_Project.Data;
 using RestaurentMS_Final_Project.Models;
 
 namespace RestaurentMS_Final_Project.Controllers
 {
+    
     public class PaymentTypeController : Controller
     {
         private readonly RestaurentMSDbContext _context;
@@ -13,14 +15,14 @@ namespace RestaurentMS_Final_Project.Controllers
             _context = context;
         }
 
-
+        [Authorize(Roles = "Admin,Employee")]
         public IActionResult Index()
         {
             IEnumerable<PaymentType> paymentObj = _context.paymentTypes;
             return View(paymentObj);
         }
 
-
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -28,6 +30,7 @@ namespace RestaurentMS_Final_Project.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public IActionResult Create(PaymentType paymentObj)
         {
             var record = _context.paymentTypes.Where(x => x.PaymentTypeName == paymentObj.PaymentTypeName).FirstOrDefault();
@@ -50,7 +53,7 @@ namespace RestaurentMS_Final_Project.Controllers
 
 
 
-
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(int? id)
         {
             if (id == null || id == 0)
@@ -68,6 +71,7 @@ namespace RestaurentMS_Final_Project.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public IActionResult DeletePayment(int? id)
         {
             var deleterecord = _context.paymentTypes.Find(id);

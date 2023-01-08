@@ -72,12 +72,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUl0ZW1zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/KKT/Documents/Contour Bootcamp .NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/MenuItems/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUl0ZW1zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/KKT/Documents/Contour Bootcamp .NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/MenuItems/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUl0ZW1zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/KKT/Documents/Contour Bootcamp .NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/Order/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/KKT/Documents/Contour Bootcamp .NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/Order/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/KKT/Documents/Contour Bootcamp .NET/RestaurentMS_Final Project/RestaurentMS_Final Project/Views/Order/Index.cshtml]

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace RestaurentMS_Final_Project.Models
 {
-    public class MenuItem 
+    public class MenuItem
     {
         [Key]
         public int Id { get; set; }
@@ -18,7 +18,5 @@ namespace RestaurentMS_Final_Project.Models
         public int menuCategoryId { get; set; }
         public MenuCategory menuCategory { get; set; }
 
-        public IList<Order> orders { get; set; }    
-        
     }
 }

@@ -7,14 +7,24 @@ namespace RestaurentMS_Final_Project.Models
         [Key]
         public int Id { get; set; }
 
-        public int MenuItemId { get; set; }
+        [Required(ErrorMessage = "Please Enter Customer Name")]
+        public string CustomerName { get; set; }
+
+        [Required]
+        public string OrderNumber { get; set; }
+
+        [Required]
+        public decimal FinalTotal { get; set; }
+
+        [Required]
+        public DateTime OrderDate { get; set; }
+
 
         public int PaymentId { get; set; }
 
+        public IList<OrderDetail>? OrderDetail { get; set; }  
 
-        public IList<MenuItem> menuItem { get; set; }  
-
-        public PaymentType payment { get; set; }
+        public PaymentType Payment { get; set; }
 
 
 

@@ -1,0 +1,93 @@
+﻿@*@using RestaurentMS_Final_Project.ViewModels
+@model OrderViewModel*@
+
+@*<br />
+<br />
+<br />
+<h2 style="color: black">Customer Details</h2>
+
+<form method="post" asp-action="Create" asp-controller="Order">
+    <div asp-validation-summary="All"></div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="@Model.Order.CustomerName">Customer Name</label>
+                <input type="text" class="form-control mb-3" asp-for="@Model.Order.CustomerName" placeholder="Enter customer name..">
+                <span asp-validation-for="@Model.Order.CustomerName" class=" alert-danger"></span>
+             </div>
+        </div>
+
+        <div class="form-row">
+
+        <div class="form-group col-md-6">
+            <label asp-for="PaymentId">Payment Type</label>
+            <select asp-for="PaymentId" asp-items="@Model.payment" class="form-control">
+                    <option disabled selected>--Select Payment Type--</option>
+                </select>
+            </div>
+        </div>
+       
+
+<br />
+<div style="display: flex; justify-content: space-between; align-items: center;">
+        <h3>Order items</h3>
+      
+</div>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model.MenuItems)
+        {
+                <tr>
+                    <td>
+                        <input type="checkbox" class="checkbox"/>
+                    </td>
+                    <td width="20%">
+                        @item.MenuItemName
+                    </td>
+                    <td width="60%">
+                        @item.MenuItemPrice
+                    </td>
+                    <td>
+                        <div style="display: none">
+                            <input type="number" class="form-control mb-3" value="0" id="quantity" >
+                        </div>
+                    </td>
+                </tr>
+        }
+    </tbody>
+</table>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label asp-for="@Model.Order.TotalAmount">Total Amount</label>
+            <input disabled type="text" class="form-control mb-3" asp-for="@Model.Order.TotalAmount">
+        </div>
+    </div>
+<button type="submit">Submit</button>
+</form>*@
+
+
+@*@section Scripts{
+    <script>
+        $(".checkbox").click(function () {
+            if ($(this).is(":checked")) {
+                $(this).parent().parent().find('div').show();
+                
+            } else {
+                $(this).parent().parent().find('div').hide();
+            }
+        });
+
+        
+    </script>
+}
+*@

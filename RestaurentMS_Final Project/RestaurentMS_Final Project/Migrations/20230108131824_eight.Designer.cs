@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RestaurentMS_Final_Project.Data;
 
@@ -11,9 +12,10 @@ using RestaurentMS_Final_Project.Data;
 namespace RestaurentMS_Final_Project.Migrations
 {
     [DbContext(typeof(RestaurentMSDbContext))]
-    partial class RestaurentMSDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230108131824_eight")]
+    partial class eight
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -361,7 +363,7 @@ namespace RestaurentMS_Final_Project.Migrations
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("orderDetail");
+                    b.ToTable("OrderDetail");
                 });
 
             modelBuilder.Entity("RestaurentMS_Final_Project.Models.PaymentType", b =>

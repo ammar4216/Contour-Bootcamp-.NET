@@ -12,10 +12,10 @@ namespace RestaurentMS_Final_Project.ViewModels
         [Required(ErrorMessage = "Please Enter Menu Item Price")]
         public decimal MenuItemPrice { get; set; }
 
+        [Required(ErrorMessage = "Please Select Menu Category")]
         public int menuCategoryId { get; set; }
 
-        [Required(ErrorMessage = "Please Select Menu Category")]
-        public IList<SelectListItem> menu { get; set; }
+        public IList<SelectListItem> menu { get; set; } = new List<SelectListItem>();
 
     }
 }

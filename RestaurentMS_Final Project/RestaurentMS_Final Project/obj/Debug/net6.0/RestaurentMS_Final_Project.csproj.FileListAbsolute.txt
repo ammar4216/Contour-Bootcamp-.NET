@@ -277,9 +277,6 @@ C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\Restaure
 C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\obj\Debug\net6.0\RestaurentMS_Final_Project.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\obj\Debug\net6.0\RestaurentMS_Final_Project.RazorAssemblyInfo.cache
 C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\obj\Debug\net6.0\RestaurentMS_Final_Project.RazorAssemblyInfo.cs
-C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\obj\Debug\net6.0\RestaurentMS_Final_Project.dll
-C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\obj\Debug\net6.0\refint\RestaurentMS_Final_Project.dll
-C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\obj\Debug\net6.0\RestaurentMS_Final_Project.pdb
 C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\bin\Debug\net6.0\appsettings.json
 C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\bin\Debug\net6.0\RestaurentMS_Final_Project.staticwebassets.runtime.json
@@ -543,5 +540,8 @@ C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\Restaure
 C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\obj\Debug\net6.0\scopedcss\bundle\RestaurentMS_Final_Project.styles.css
 C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\obj\Debug\net6.0\scopedcss\projectbundle\RestaurentMS_Final_Project.bundle.scp.css
 C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\obj\Debug\net6.0\RestaurentMS_Final_Project.csproj.CopyComplete
+C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\obj\Debug\net6.0\RestaurentMS_Final_Project.dll
+C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\obj\Debug\net6.0\refint\RestaurentMS_Final_Project.dll
+C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\obj\Debug\net6.0\RestaurentMS_Final_Project.pdb
 C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\obj\Debug\net6.0\RestaurentMS_Final_Project.genruntimeconfig.cache
 C:\Users\KKT\Documents\Contour Bootcamp .NET\RestaurentMS_Final Project\RestaurentMS_Final Project\obj\Debug\net6.0\ref\RestaurentMS_Final_Project.dll

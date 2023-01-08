@@ -46,7 +46,14 @@ namespace RestaurentMS_Final_Project
 
             // SendGrid Email Service
             builder.Services.AddTransient<ISendGridEmail, SendGridEmail>();
+           
+
+            //Custom Services
+            builder.Services.AddScoped<IPaymentRepo, PaymentTypeService>();
+            builder.Services.AddScoped<IMenuItemRepo, MenuItemService>();
+            builder.Services.AddTransient<IOrderService, OrderService>();
             builder.Services.Configure<AuthMessageSenderOptions>(builder.Configuration.GetSection("SendGrid"));
+
 
 
 

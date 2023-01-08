@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RestaurentMS_Final_Project.Data;
 
@@ -11,9 +12,10 @@ using RestaurentMS_Final_Project.Data;
 namespace RestaurentMS_Final_Project.Migrations
 {
     [DbContext(typeof(RestaurentMSDbContext))]
-    partial class RestaurentMSDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230106112655_fifth")]
+    partial class fifth
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -305,20 +307,6 @@ namespace RestaurentMS_Final_Project.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("CustomerName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("FinalTotal")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<DateTime>("OrderDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("OrderNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("PaymentId")
                         .HasColumnType("int");
 
@@ -329,7 +317,7 @@ namespace RestaurentMS_Final_Project.Migrations
                     b.ToTable("orders");
                 });
 
-            modelBuilder.Entity("RestaurentMS_Final_Project.Models.OrderDetail", b =>
+            modelBuilder.Entity("RestaurentMS_Final_Project.Models.OrderItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -337,31 +325,26 @@ namespace RestaurentMS_Final_Project.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<decimal>("Discount")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("ItemPrice")
-                        .HasColumnType("decimal(18,2)");
-
                     b.Property<int>("MenuItemId")
                         .HasColumnType("int");
 
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
+                    b.Property<string>("MenuItemName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Quantity")
-                        .HasColumnType("float");
-
-                    b.Property<decimal>("Total")
+                    b.Property<decimal>("MenuItemPrice")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ordersId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("MenuItemId");
 
-                    b.HasIndex("OrderId");
+                    b.HasIndex("ordersId");
 
-                    b.ToTable("orderDetail");
+                    b.ToTable("OrderItem");
                 });
 
             modelBuilder.Entity("RestaurentMS_Final_Project.Models.PaymentType", b =>
@@ -486,7 +469,7 @@ namespace RestaurentMS_Final_Project.Migrations
                     b.Navigation("Payment");
                 });
 
-            modelBuilder.Entity("RestaurentMS_Final_Project.Models.OrderDetail", b =>
+            modelBuilder.Entity("RestaurentMS_Final_Project.Models.OrderItem", b =>
                 {
                     b.HasOne("RestaurentMS_Final_Project.Models.MenuItem", "MenuItem")
                         .WithMany()
@@ -494,20 +477,20 @@ namespace RestaurentMS_Final_Project.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("RestaurentMS_Final_Project.Models.Order", "Orders")
-                        .WithMany("OrderDetail")
-                        .HasForeignKey("OrderId")
+                    b.HasOne("RestaurentMS_Final_Project.Models.Order", "orders")
+                        .WithMany("MenuItem")
+                        .HasForeignKey("ordersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("MenuItem");
 
-                    b.Navigation("Orders");
+                    b.Navigation("orders");
                 });
 
             modelBuilder.Entity("RestaurentMS_Final_Project.Models.Order", b =>
                 {
-                    b.Navigation("OrderDetail");
+                    b.Navigation("MenuItem");
                 });
 #pragma warning restore 612, 618
         }

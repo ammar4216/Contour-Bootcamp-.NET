@@ -22,7 +22,6 @@ namespace RestaurentMS_Final_Project.Controllers
         // Read User List
         public IActionResult Index()
         {
-            
             var userList = _context.AppUser.ToList();
             var userRole = _context.UserRoles.ToList();
             var roles = _context.Roles.ToList();
@@ -88,6 +87,7 @@ namespace RestaurentMS_Final_Project.Controllers
 
                 await _userManager.AddToRoleAsync(userDbValue, _context.Roles.FirstOrDefault(u => u.Id == user.RoleId).Name);
                 _context.SaveChanges();
+                TempData["success"] = "User updated successfully!";
                 return RedirectToAction(nameof(Index));
             }
 
@@ -112,7 +112,7 @@ namespace RestaurentMS_Final_Project.Controllers
             }
             _context.AppUser.Remove(user);
             _context.SaveChanges();
-
+            TempData["success"] = "User deleted successfully!";
             return RedirectToAction(nameof(Index));
         }
     }

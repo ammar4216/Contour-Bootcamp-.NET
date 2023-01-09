@@ -45,9 +45,10 @@ namespace RestaurentMS_Final_Project.Controllers
             {
                 _context.contactDetails.Add(contact);
                 _context.SaveChanges();
+                TempData["success"] = "Your query has been submitted successfully, Our team will Contact you very soon!";
                 return RedirectToAction("Index");
             }
-            
+
             return View(contact);
         }
 

@@ -35,18 +35,10 @@ namespace RestaurentMS_Final_Project.Controllers
             var record = _context.menuCategories.Where(x => x.MenuCategoryName == menuObj.MenuCategoryName).FirstOrDefault();
             if (ModelState.IsValid)
             {
-                if(record != null)
-                {
-                    TempData["ResultNotOK"] = "Menu Category already Exist!!";
-                    return View();
-                }
-                else
-                {
                     _context.menuCategories.Add(menuObj);
                     _context.SaveChanges();
-                    TempData["ResultOk"] = "Menu Category Added Successfully!";
+                    TempData["success"] = "Menu Category added Successfully!";
                     return RedirectToAction("Index");
-                } 
             }
 
             return View(menuObj);
@@ -78,7 +70,7 @@ namespace RestaurentMS_Final_Project.Controllers
             {
                 _context.menuCategories.Update(menu);
                 _context.SaveChanges();
-                TempData["ResultOk"] = "Menu Category Updated Successfully!";
+                TempData["success"] = "Menu Category updated successfully!";
                 return RedirectToAction("Index");
             }
             return RedirectToAction("Index");
@@ -112,7 +104,7 @@ namespace RestaurentMS_Final_Project.Controllers
             }
             _context.menuCategories.Remove(deleterecord);
             _context.SaveChanges();
-            TempData["ResultOk"] = "Menu Category Deleted Successfully!";
+            TempData["success"] = "Menu Category deleted successfully!";
             return RedirectToAction("Index");
         }
     }

@@ -1,5 +1,16 @@
 ﻿@using RestaurentMS_Final_Project.ViewModels
 @model RegisterViewModel
+@if (TempData["success"] != null)
+{
+    <br />
+    <br />
+    <br />
+    <div class="alert alert-success alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Success! </strong>@TempData["success"]
+    </div>
+}
+
 
 <div class="banner_wrapper">
     <div class="container">

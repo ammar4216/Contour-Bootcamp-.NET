@@ -80,6 +80,7 @@ namespace RestaurentMS_Final_Project.Controllers
                         await _userManager.AddToRoleAsync(user, "Employee");
                     }
                     await _signInManager.SignInAsync(user, isPersistent: false);
+                    TempData["success"] = "User account have been created successfully.";
                     return LocalRedirect(returnUrl);
                 }
                 ModelState.AddModelError("Password", "User not created, Password not strong enough or unique");
@@ -105,6 +106,7 @@ namespace RestaurentMS_Final_Project.Controllers
                 var result = await _signInManager.PasswordSignInAsync(loginViewModel.UserName, loginViewModel.Password, loginViewModel.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
+                    TempData["success"] = "You have been logged in successfully.";
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -113,6 +115,7 @@ namespace RestaurentMS_Final_Project.Controllers
                     return View(loginViewModel);
                 }
             }
+            
             return View(loginViewModel);
         }
 
@@ -140,6 +143,7 @@ namespace RestaurentMS_Final_Project.Controllers
                     "<a href='"+callbackurl+"'>Link</a>");
                 return RedirectToAction("ForgotPasswordConfirmation");
             }
+            TempData["success"] = "Reset Password Email has been sent to your email address.";
             return View(model);
         }
 
@@ -173,6 +177,7 @@ namespace RestaurentMS_Final_Project.Controllers
                     return RedirectToAction("ResetPasswordConfirmation");
                 }
             }
+            TempData["success"] = "Password has been reset successfully";
             return View(resetPasswordViewModel);
         }
 
@@ -182,6 +187,7 @@ namespace RestaurentMS_Final_Project.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
+            TempData["success"] = "You have been logged out successfully";
             return RedirectToAction("Index", "Home");
         }
     }

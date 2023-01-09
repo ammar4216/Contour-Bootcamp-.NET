@@ -3,6 +3,20 @@
 
 @using RestaurentMS_Final_Project.ViewModels;
 @model LoginViewModel
+
+@if (TempData["success"] != null)
+{
+    <br />
+    <br />
+    <br />
+    <div class="alert alert-success alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Success! </strong>@TempData["success"]
+    </div>
+}
+
+
+
 <br />
 <br />
 <br />

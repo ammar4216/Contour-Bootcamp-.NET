@@ -9,7 +9,16 @@
     @{
     ViewData["Title"] = "Index";
 }
-
+@if (TempData["success"] != null)
+{
+    <br />
+    <br />
+    <br />
+    <div class="alert alert-success alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Success! </strong>@TempData["success"]
+    </div>
+}
 <br />
 <br />
 <br />

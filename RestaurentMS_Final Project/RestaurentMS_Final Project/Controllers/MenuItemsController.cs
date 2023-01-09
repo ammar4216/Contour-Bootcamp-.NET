@@ -62,6 +62,7 @@ namespace RestaurentMS_Final_Project.Controllers
                 
                     _context.menuItems.Add(menuItems);
                     _context.SaveChanges();
+                    TempData["success"] = "Menu Item added successfully!";
                     return RedirectToAction("Index");
 
             }
@@ -94,6 +95,7 @@ namespace RestaurentMS_Final_Project.Controllers
         //}
 
         [Authorize(Roles = "Admin")]
+        [HttpPost]
         public IActionResult Delete(int? Id)
         {
             var menu = _context.menuItems.FirstOrDefault(u => u.Id == Id);
@@ -103,6 +105,7 @@ namespace RestaurentMS_Final_Project.Controllers
             }
             _context.menuItems.Remove(menu);
             _context.SaveChanges();
+            TempData["success"] = "Menu Item deleted successfully!";
 
             return RedirectToAction(nameof(Index));
         }

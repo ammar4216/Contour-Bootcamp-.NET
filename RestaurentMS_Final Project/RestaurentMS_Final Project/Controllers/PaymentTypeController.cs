@@ -44,6 +44,7 @@ namespace RestaurentMS_Final_Project.Controllers
                 {
                     _context.paymentTypes.Add(paymentObj);
                     _context.SaveChanges();
+                    TempData["success"] = "Payment Type added successfully!";
                     return RedirectToAction("Index");
                 }
             }
@@ -81,6 +82,7 @@ namespace RestaurentMS_Final_Project.Controllers
             }
             _context.paymentTypes.Remove(deleterecord);
             _context.SaveChanges();
+            TempData["success"] = "Payment Type deleted successfully!";
             return RedirectToAction("Index");
         }
     }

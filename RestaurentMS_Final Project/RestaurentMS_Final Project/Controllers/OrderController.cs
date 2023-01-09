@@ -65,6 +65,7 @@ namespace RestaurentMS_Final_Project.Controllers
                 SuccessMessage = "There Is Some Issue While Placing the Order.";
             }
 
+            TempData["success"] = "Order added successfully!";
             return Json(SuccessMessage);
         }
 
@@ -79,6 +80,7 @@ namespace RestaurentMS_Final_Project.Controllers
             _context.orders.Remove(order);
             _context.SaveChanges();
 
+            TempData["success"] = "Order deleted successfully!";
             return RedirectToAction(nameof(Index));
         }
 
